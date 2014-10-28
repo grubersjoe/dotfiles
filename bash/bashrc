@@ -50,7 +50,6 @@ alias mkdir='mkdir -p -v'
 alias man='man -Len'
 alias open='xdg-open'
 alias nano='vim'
-alias phonegap='cordova'
 alias latexmk='latexmk.pl -pdf -pvc'
 alias aur='yaourt'
 
@@ -62,6 +61,9 @@ PATH=$PATH:$HOME/.bin
 if [ -n "$DISPLAY" -a "$TERM" == "xterm" ]; then
     export TERM=xterm-256color
 fi
+
+# Create i3 config
+~/.i3/make-config.sh
 
 # Remove annoying iPod directory
 rm -rf ~/iPod

@@ -4,7 +4,8 @@
 # (lsb_release needs to be installed)
 
 distro=$(lsb_release -is)
-extra_config="dist/${distro,,}.conf"
+extra_config="${distro,,}.conf"
+cd ~/.i3/
 cat base.conf > config
 cat $extra_config >> config
 i3-msg reload > /dev/null
