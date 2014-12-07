@@ -6,5 +6,9 @@ host=$(hostname)
 host_config="hosts/$(hostname).conf"
 cd ~/.i3/
 cat base.conf > config
+
+# Adds a newline if neccessary
+sed -i -e '$a\' config
+
 cat $host_config >> config
-i3-msg reload > /dev/null
+i3-msg restart
