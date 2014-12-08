@@ -67,7 +67,3 @@ done
 
 # Ruby Gems
 PATH="`ruby -e 'puts Gem.user_dir'`/bin:$PATH"
-
-# Create i3 config (host dependent extra configuration)
-~/.i3/make-config.sh
-
