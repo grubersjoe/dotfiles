@@ -60,11 +60,14 @@ if [ -n "$DISPLAY" -a "$TERM" == "xterm" ]; then
     export TERM=xterm-256color
 fi
 
-# Create i3 config
-#~/.i3/make-config.sh
+# Adding ~/.bin and subdirectories to PATH
+for d in $HOME/.bin/*/; do
+    PATH+=":$d"
+done
 
 # Ruby Gems
 PATH="`ruby -e 'puts Gem.user_dir'`/bin:$PATH"
 
-# Adding ~/.bin to PATH
-PATH=$PATH:$HOME/.bin
+# Create i3 config (host dependent extra configuration)
+~/.i3/make-config.sh
+
