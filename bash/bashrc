@@ -61,6 +61,7 @@ if [ -n "$DISPLAY" -a "$TERM" == "xterm" ]; then
 fi
 
 # Adding ~/.bin and subdirectories to PATH
+PATH+=":~/.bin"
 for d in $HOME/.bin/*/; do
     PATH+=":$d"
 done
