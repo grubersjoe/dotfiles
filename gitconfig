@@ -1,9 +1,12 @@
 [user]
     email = gruberjonathan@gmail.com
     name = Jonathan Gruber
-
+    
 [diff]
     tool = meld
 
 [difftool]
 	prompt = false
+
+[push]
+	default = simple
