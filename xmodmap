@@ -1,5 +1,6 @@
-! RIGHT ALT
-keycode 108 = Mode_switch 
+! left and right super
+keycode 133 = Mode_switch 
+keycode 134 = Mode_switch 
 
 keysym e = e E EuroSign
 keysym a = a A adiaeresis Adiaeresis
