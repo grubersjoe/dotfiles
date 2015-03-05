@@ -1,0 +1,3 @@
+[submodule "gtk/numix-minimal"]
+	path = gtk/numix-minimal
+	url = https://github.com/gruberjonathan/numix-minimal
