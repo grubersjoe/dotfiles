@@ -23,6 +23,9 @@ shopt -s checkwinsize
 # Prompt
 PS1='\[\e[1;37m\]\W\[\e[0m\] \[\e[1;34m\]⚡\[\e[0m\] '
 
+# Set shell window title (gnome-terminal)
+PROMPT_COMMAND='echo -ne "\033]0;${PWD}\007"'
+
 # Make less more friendly for non-text input files, see lesspipe(1)
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
 
