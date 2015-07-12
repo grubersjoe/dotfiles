@@ -1,6 +1,4 @@
-#
-# ~/.bashrc
-#
+# ~/.bashrc (GNU/Linux)
 
 # If not running interactively, don't do anything
 case $- in
