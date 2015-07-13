@@ -6,7 +6,7 @@ modules=( "vboxdrv" "vboxnetflt" "vboxnetadp" )
 
 declare -A vms
 vms=( [ie8]="cff5fc40-876e-428c-9875-106e96a61a3d" 
-	  [ie9]="ae49eda2-7b8c-48a5-aaa5-921af1f1ff12" 
+	  [ie9]="79fd83c3-23b8-443a-adb0-1cd16acd1549" 
 	  [ie10]="2e43754f-350a-48da-b7e2-46219ab20da6" 
 	  [ie11]="4d816a3e-215a-4d70-bf6a-6a8ca6dcf5f4" )
 
