@@ -18,3 +18,4 @@ fi
 
 ~/.i3/make-config.sh
 exec i3
+#exec startkde 
