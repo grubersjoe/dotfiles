@@ -55,6 +55,7 @@ alias mkdir='mkdir -pv'
 alias man='man -Len'
 alias open='xdg-open'
 alias nano='vim'
+alias gsc='gnome-screenshot -i'
 alias aur='yaourt'
 
 # Enable 256 color terminal
@@ -70,3 +71,5 @@ done
 
 # Ruby Gems
 PATH="`ruby -e 'puts Gem.user_dir'`/bin:$PATH"
+
+fortune | lolcat
