@@ -11,7 +11,5 @@
 [push]
 	default = simple
 
-[credential]
-	helper = /usr/lib/git-core/git-credential-gnome-keyring
 [url "https://"]
 	insteadOf = git://
