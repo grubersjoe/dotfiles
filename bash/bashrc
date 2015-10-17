@@ -32,9 +32,10 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
-# Exports
+# Environmental variables and exports
 export EDITOR="vim"
 export CL_JDK="/usr/lib/jvm/default"
+export QT_STYLE_OVERRIDE=GTK+
 
 # Java font rendering
 # export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel'
