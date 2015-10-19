@@ -35,15 +35,13 @@ fi
 # Environmental variables and exports
 export EDITOR="vim"
 export CL_JDK="/usr/lib/jvm/default"
+export WEBIDE_JDK="/usr/lib/jvm/default"
 export QT_STYLE_OVERRIDE=GTK+
-
-# Java font rendering
-# export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel'
 
 # Aliases
 alias cc='clear'
 alias cl='clear'
-alias ls='ls --color=auto'
+alias ls='ls --color=auto --group-directories-first'
 alias ll='ls -lh'
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
@@ -71,4 +69,5 @@ done
 # Ruby Gems
 PATH="`ruby -e 'puts Gem.user_dir'`/bin:$PATH"
 
+# Happy shell startup
 fortune | lolcat
