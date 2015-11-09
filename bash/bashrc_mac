@@ -9,10 +9,6 @@ HISTSIZE=10000
 # Append to the history file, don't overwrite it
 shopt -s histappend
 
-# Check the window size after each command and, if necessary,
-# update the values of LINES and COLUMNS.
-shopt -s checkwinsize
-
 # Prompt
 PS1='\W ⚡  '
 
@@ -33,12 +29,6 @@ alias df='df -h'
 alias mkdir='mkdir -pv'
 alias man='man -Len'
 alias nano='vim'
-
-# Adding ~/.bin and subdirectories to PATH
-PATH+=":~/.bin"
-for d in $HOME/.bin/*/; do
-    PATH+=":$d"
-done
 
 # Adding Ruby Gems to path
 export PATH=$(brew --prefix ruby)/bin:$PATH
