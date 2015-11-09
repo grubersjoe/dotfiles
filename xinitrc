@@ -11,10 +11,6 @@ if [ -d /etc/X11/xinit/xinitrc.d ]; then
   unset f
 fi
 
-# GNOME keyring
-# eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets)
-# export SSH_AUTH_SOCK
-
 # Extra keybindings
 if [ -s ~/.xmodmap ]; then
     xmodmap ~/.xmodmap
