@@ -1,5 +1,4 @@
 #!/bin/bash
-
 # (Works only on GNOME based desktops)
 
 WALLPAPER_DIR=$HOME/.wallpaper
