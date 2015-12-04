@@ -13,5 +13,4 @@ set wildmenu
 filetype indent on
 
 nnoremap gV `[v`]
-
 inoremap jk <esc>
