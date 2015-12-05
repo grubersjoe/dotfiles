@@ -54,6 +54,7 @@ alias open='xdg-open'
 alias nano='vim'
 alias gsc='gnome-screenshot -i'
 alias aur='yaourt'
+alias gparted='gksudo -k gparted'
 
 # Enable 256 color terminal
 if [ -n "$DISPLAY" -a "$TERM" == "xterm" ]; then
