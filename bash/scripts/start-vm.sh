@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 # A simple shorthand to start a specific VM image
+# TODO: store vm hashes in a separate file
 
 modules=( "vboxdrv" "vboxnetflt" "vboxnetadp" )
 
