@@ -1,7 +1,9 @@
 syntax enable
 
-colors Tomorrow-Night
+let base16colorspace=256
+colors base16-tomorrow
 
+set background=dark
 set incsearch
 set number
 set showcmd
