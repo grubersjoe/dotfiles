@@ -13,6 +13,8 @@ set softtabstop=4
 set tabstop=4
 set wildmenu
 
+set backspace=indent,eol,start
+
 filetype indent on
 
 nnoremap gV `[v`]
