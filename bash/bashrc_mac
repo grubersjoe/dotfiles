@@ -10,12 +10,15 @@ HISTSIZE=10000
 shopt -s histappend
 
 # Prompt
-PS1='\W ⚡  '
+PS1='\W  '
 
 # Exports
 export CLICOLOR=1
-export LSCOLORS=GxFxCxDxBxegedabagaced
 export EDITOR="vim"
+
+# Base16 Shell
+BASE16_SHELL="$HOME/.dotfiles/theme/base16-shell/base16-tomorrow.dark.sh"
+[[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
 
 # Aliases
 alias cc='clear'
@@ -29,9 +32,6 @@ alias df='df -h'
 alias mkdir='mkdir -pv'
 alias man='man -Len'
 alias nano='vim'
-
-# Adding Ruby Gems to path
-export PATH=$(brew --prefix ruby)/bin:$PATH
 
 # Bash completion
 if [ -f $(brew --prefix)/etc/bash_completion ]; then

@@ -1,3 +1,0 @@
-# ~/.bash_profile (Mac OS)
-
-[[ -f ~/.bashrc ]] && . ~/.bashrc
