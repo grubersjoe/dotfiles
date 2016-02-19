@@ -34,17 +34,15 @@ export QT_STYLE_OVERRIDE=GTK+
 
 # Aliases
 alias aur='yaourt'
-alias cl='clear'
 alias df='df -h'
 alias diff='colordiff -y --width=$COLUMNS'
-alias ll='ls -lh'
 alias ls='ls --color=auto --group-directories-first'
+alias ll='ls -lh'
 alias grep='grep --color=auto'
 alias gsc='gnome-screenshot -i'
 alias gparted='gksudo -k gparted'
 alias man='man -Len'
 alias mkdir='mkdir -pv'
-alias nano='vim'
 alias open='xdg-open'
 
 # Enable 256 color terminal
@@ -61,6 +59,13 @@ PS1='\[\e[1;37m\]\W\[\e[0m\] \[\e[1;34m\]⚡\[\e[0m\] '
 
 # Set shell window title (gnome-terminal)
 PROMPT_COMMAND='echo -ne "\033]0;${PWD}\007"'
+
+# Functions
+function wincd() {
+	line=$(sed -e 's#\\#/#g' <<< "$1")
+	cd "$line"
+}
+export -f wincd
 
 # Ruby Gems
 PATH="`ruby -e 'puts Gem.user_dir'`/bin:$PATH"
