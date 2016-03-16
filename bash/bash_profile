@@ -1,0 +1,13 @@
+# ~/.bash_profile (GNU/Linux)
+
+PATH=$PATH:$(ruby -rubygems -e "puts Gem.user_dir")/bin
+
+export EDITOR="vim"
+export ANDROID_HOME=~/.android-sdk/
+export WEBIDE_JDK="/usr/lib/jvm/default"
+export CL_JDK="/usr/lib/jvm/default"
+export QT_STYLE_OVERRIDE=GTK+
+
+[[ -f ~/.bashrc ]] && . ~/.bashrc
+
+[[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && exec startx

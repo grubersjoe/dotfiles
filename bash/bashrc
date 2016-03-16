@@ -15,23 +15,6 @@ shopt -s histappend
 # update the values of LINES and COLUMNS.
 shopt -s checkwinsize
 
-# Adding ~/.bin and subdirectories to PATH
-PATH+=":~/.bin"
-for d in $HOME/.bin/*/; do
-    PATH+=":$d"
-done
-
-# Enable bash completion in interactive shells
-if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
-    . /etc/bash_completion
-fi
-
-# Environmental variables and exports
-export EDITOR="vim"
-export CL_JDK="/usr/lib/jvm/default"
-export WEBIDE_JDK="/usr/lib/jvm/default"
-export QT_STYLE_OVERRIDE=GTK+
-
 # Aliases
 alias aur='yaourt'
 alias df='df -h'
@@ -60,16 +43,6 @@ PS1='\[\e[1;37m\]\W\[\e[0m\] \[\e[1;34m\]⚡\[\e[0m\] '
 
 # Set shell window title (gnome-terminal)
 PROMPT_COMMAND='echo -ne "\033]0;${PWD}\007"'
-
-# Functions
-function wincd() {
-	line=$(sed -e 's#\\#/#g' <<< "$1")
-	cd "$line"
-}
-export -f wincd
-
-# Ruby Gems
-PATH="`ruby -e 'puts Gem.user_dir'`/bin:$PATH"
 
 # Happy shell startup
 fortune | lolcat
