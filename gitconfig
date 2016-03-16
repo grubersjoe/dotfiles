@@ -1,18 +1,18 @@
+[core]
+	autocrlf = input
+
 [user]
     email = gruberjonathan@gmail.com
     name = Jonathan Gruber
+
+[push]
+	default = simple
+
+[credential]
+	helper = cache --timeout=1800
     
 [diff]
     tool = meld
 
 [difftool]
 	prompt = false
-
-[push]
-	default = simple
-
-[url "https://"]
-	insteadOf = git://
-
-[credential]
-	helper = cache --timeout=1800
