@@ -1,8 +1,4 @@
 #!/bin/sh
-#
-# ~/.xinitrc
-#
-# Executed by startx (run your window manager from here)
 
 if [ -d /etc/X11/xinit/xinitrc.d ]; then
   for f in /etc/X11/xinit/xinitrc.d/*; do
@@ -11,9 +7,14 @@ if [ -d /etc/X11/xinit/xinitrc.d ]; then
   unset f
 fi
 
-# Extra keybindings
+# Keymap manipulations
 if [ -s ~/.xmodmap ]; then
     xmodmap ~/.xmodmap
+fi
+
+# Extra key bindings
+if [ -s ~/.xbindkeysrc ]; then
+	xbindkeys
 fi
 
 ~/.i3/make-config.sh
