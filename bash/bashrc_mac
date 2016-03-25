@@ -30,7 +30,6 @@ alias egrep='egrep --color=auto'
 alias diff='colordiff -y --width=$COLUMNS'
 alias df='df -h'
 alias mkdir='mkdir -pv'
-alias man='man -Len'
 alias nano='vim'
 
 # Bash completion
