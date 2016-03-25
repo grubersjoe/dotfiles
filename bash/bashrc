@@ -25,7 +25,6 @@ alias la='ll -a'
 alias grep='grep --color=auto'
 alias gsc='gnome-screenshot -i'
 alias gparted='gksudo -k gparted'
-alias man='man -Len'
 alias mkdir='mkdir -pv'
 alias open='xdg-open'
 
