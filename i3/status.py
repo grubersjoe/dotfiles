@@ -29,9 +29,9 @@ status.register('load',
 	critical_limit = 5.5
 )
 
-#status.register('spotify',
-#	format = '[music] {artist} - {title}   '
-#)
+status.register('spotify',
+        format = '[music] {artist} - {title}   '
+)
 
 # status.register('pulseaudio',
 #     format = '♪ {volume}')
