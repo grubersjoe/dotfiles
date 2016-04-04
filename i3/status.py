@@ -30,7 +30,7 @@ status.register('load',
 )
 
 status.register('spotify',
-        format = '[music] {artist} - {title}   '
+	format = '{artist} - {title}   '
 )
 
 # status.register('pulseaudio',
