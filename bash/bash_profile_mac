@@ -3,10 +3,11 @@
 # Homebrew installs some programs to /usr/local/sbin
 export PATH="/usr/local/sbin:$PATH"
 
+# NPM
+NPM_PACKAGES="${HOME}/.npm-packages"
+export PATH="$NPM_PACKAGES/bin:$PATH"
+
 # Ruby Gems
 export PATH=$(brew --prefix ruby)/bin:$PATH
-
-# "Global" Node packages
-export PATH=~/.npm-global/bin:$PATH
 
 [[ -f ~/.bashrc ]] && . ~/.bashrc
