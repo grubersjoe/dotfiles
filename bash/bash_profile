@@ -1,10 +1,16 @@
 # ~/.bash_profile (GNU/Linux)
 
+# Ruby Gems
 PATH=$PATH:$(ruby -rubygems -e "puts Gem.user_dir")/bin
 
+# NPM packages
+NPM_PACKAGES="${HOME}/.npm-packages"
+PATH="$NPM_PACKAGES/bin:$PATH"
+
 export EDITOR="vim"
+export TERMINAL="gnome-terminal"
+
 export ANDROID_HOME=~/.android-sdk/
-export WEBIDE_JDK="/usr/lib/jvm/default"
 export CL_JDK="/usr/lib/jvm/default"
 export QT_STYLE_OVERRIDE=GTK+
 
