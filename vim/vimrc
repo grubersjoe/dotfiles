@@ -3,19 +3,18 @@ syntax enable
 let base16colorspace=256
 colors base16-tomorrow
 
-set background=dark
-set incsearch
-set number
-set scrolloff=3
-set showcmd
-set showmatch
-set softtabstop=4
-set tabstop=4
-set wildmenu
+set background=dark	
+set backspace=indent,eol,start		" improved backspace
+set incsearch						" incremental search
+set number							" line numbers
+set scrolloff=4						" scroll offset
+set showcmd							" show last command
+set showmatch						" show matching parenthesis
+set softtabstop=4					" soft tab stop
+set tabstop=4						" tab stop
+set wildmenu						" visual autocomplete for command menu
 
-set backspace=indent,eol,start
+filetype indent on					" file type specific indents 
 
-filetype indent on
-
-" Visually select the text that was last edited/pasted
-nnoremap gV `[v`]
+" turn off search hightlight
+nnoremap <leader><space> :nohlsearch<CR>	
