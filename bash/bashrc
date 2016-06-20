@@ -35,7 +35,7 @@ BASE16_SHELL="$HOME/.dotfiles/theme/base16-shell/base16-tomorrow.dark.sh"
 # Prompt
 PS1='\[\e[0;34m\]\W\[\e[0m\] \[\e[0;34m\]\$\[\e[0m\] '
 
-# Set shell window title (gnome-terminal)
+# Set shell window title
 PROMPT_COMMAND='echo -ne "\033]0;${PWD}\007"'
 
 # Happy shell startup

@@ -8,7 +8,7 @@ NPM_PACKAGES="${HOME}/.npm-packages"
 PATH="$NPM_PACKAGES/bin:$PATH"
 
 export EDITOR="vim"
-export TERMINAL="gnome-terminal"
+export TERMINAL="lxterminal"
 
 export ANDROID_HOME=~/.android-sdk/
 export CL_JDK="/usr/lib/jvm/default"
