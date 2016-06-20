@@ -8,32 +8,53 @@ locale.setlocale(locale.LC_ALL, 'de_DE.utf8')
 status = Status(standalone = True)
 
 status.register('clock',
-	format = '%a %-d. %B %H:%M'
+	format = '%a %-d. %B %H:%M',
+	hints = {'markup': 'pango'},
+)
+
+status.register('xkblayout', 
+	format = '<span font="FontAwesome Normal 12">\uf11c</span> {name}  ',
+	uppercase = False,
+	layouts = ['us', 'de'],
+	hints = {'markup': 'pango'},
+)
+
+status.register('pulseaudio',
+	format = '<span font="FontAwesome Normal 12"></span> <span font="Meslo LG M DZ 11">{volume}</span>  ',
+	format_muted = '<span font="FontAwesome Normal 12"></span> <span font="Meslo LG M DZ 11">{volume}</span>  ',
+	color_muted = '#CC6666',
+	hints = {'markup': 'pango'},
+)
+
+status.register('uptime',
+	format = 'UP <span font="Meslo LG M DZ 11">{hours}h {mins}m</span>  ',
+	hints = {'markup': 'pango'},
+)
+
+status.register('load',
+	format = 'Load <span font="Meslo LG M DZ 11">{avg1} {avg5} {avg15}</span>  ',
+	critical_limit = 5.5,
+	hints = {'markup': 'pango'},
 )
 
 status.register('mem',
-	format = 'MEM {percent_used_mem}%  ',
+	format = 'MEM <span font="Meslo LG M DZ 11">{percent_used_mem}</span>%  ',
 	divisor = 1024**3,
 	color = '#ffffff',
 	round_size = None,
 	warn_percentage = 70,
-	alert_percentage = 80
+	alert_percentage = 85,
+	hints = {'markup': 'pango'},
 )
 
 status.register('cpu_usage',
-	format = 'CPU {usage:02}%  '
-)
-
-status.register('load',
-	format = 'Load {avg1} {avg5} {avg15}  ',
-	critical_limit = 5.5
+	format = 'CPU <span font="Meslo LG M DZ 11">{usage:02}</span>%  ',
+	hints = {'markup': 'pango'},
 )
 
 status.register('spotify',
-	format = '{artist} - {title}  '
+	format = '{artist} - {title}  ',
+	format_not_running = '',
 )
-
-# status.register('pulseaudio',
-#     format = '♪ {volume}')
 
 status.run()
