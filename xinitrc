@@ -12,10 +12,5 @@ if [ -s ~/.xmodmap ]; then
     xmodmap ~/.xmodmap
 fi
 
-# Extra key bindings
-if [ -s ~/.xbindkeysrc ]; then
-	xbindkeys
-fi
-
 ~/.i3/make-config.sh
 exec i3
