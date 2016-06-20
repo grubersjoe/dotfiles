@@ -20,25 +20,25 @@ status.register('xkblayout',
 )
 
 status.register('pulseaudio',
-	format = '<span font="FontAwesome Normal 12"></span> <span font="Fira Mono 13">{volume}</span>  ',
-	format_muted = '<span font="FontAwesome Normal 12"></span> <span font="Fira Mono 13">{volume}</span>  ',
+	format = '<span font="FontAwesome Normal 12"></span> <span font="Meslo LG M DZ 11">{volume}</span>  ',
+	format_muted = '<span font="FontAwesome Normal 12"></span> <span font="Meslo LG M DZ 11">{volume}</span>  ',
 	color_muted = '#CC6666',
 	hints = {'markup': 'pango'},
 )
 
 status.register('uptime',
-	format = 'UP <span font="Fira Mono 13">{hours}h {mins}m</span>  ',
+	format = 'UP <span font="Meslo LG M DZ 11">{hours}h {mins}m</span>  ',
 	hints = {'markup': 'pango'},
 )
 
 status.register('load',
-	format = 'Load <span font="Fira Mono 13">{avg1} {avg5} {avg15}</span>  ',
+	format = 'Load <span font="Meslo LG M DZ 11">{avg1} {avg5} {avg15}</span>  ',
 	critical_limit = 5.5,
 	hints = {'markup': 'pango'},
 )
 
 status.register('mem',
-	format = 'MEM <span font="Fira Mono 13">{percent_used_mem}</span>%  ',
+	format = 'MEM <span font="Meslo LG M DZ 11">{percent_used_mem}</span>%  ',
 	divisor = 1024**3,
 	color = '#ffffff',
 	round_size = None,
@@ -48,7 +48,7 @@ status.register('mem',
 )
 
 status.register('cpu_usage',
-	format = 'CPU <span font="Fira Mono 13">{usage:02}</span>%  ',
+	format = 'CPU <span font="Meslo LG M DZ 11">{usage:02}</span>%  ',
 	hints = {'markup': 'pango'},
 )
 
