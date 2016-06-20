@@ -27,7 +27,7 @@ status.register('pulseaudio',
 )
 
 status.register('uptime',
-	format = 'UP <span font="Fira Mono 13">{hours}:{mins}</span>  ',
+	format = 'UP <span font="Fira Mono 13">{hours}h {mins}m</span>  ',
 	hints = {'markup': 'pango'},
 )
 
