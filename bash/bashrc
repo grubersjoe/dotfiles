@@ -26,6 +26,7 @@ alias grep='grep --color=auto'
 alias gsc='gnome-screenshot -i'
 alias gparted='gksudo -k gparted'
 alias mkdir='mkdir -pv'
+alias rsync='rsync -avh --info=progress2'
 alias open='xdg-open'
 
 # Base16 Shell
