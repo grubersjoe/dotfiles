@@ -67,6 +67,8 @@ status.register('spotify',
     format = format('\uf025', 'icon') + '  {artist} - {title}  ',
     format_not_running = '',
     hints = {'markup': 'pango'},
+	on_leftclick = None,
+	on_doubleleftclick = 'playpause',
 )
 
 status.run()
