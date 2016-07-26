@@ -7,31 +7,38 @@ locale.setlocale(locale.LC_ALL, 'de_DE.utf8')
 
 fonts = {
     'fixed': 'Meslo LG M DZ 11',
-    'icon': 'FontAwesome 12'
+    'icon': 'Material Icons 13',
 }
+icon_rise = -2500;
 
 def format(contents, type = 'fixed'):
-    if type in fonts.keys():
-        return '<span font="' + fonts[type] + '">' + contents + '</span>'
+    if type in fonts.keys():            
+        if type == 'icon':
+            span = '<span font="' + fonts[type] + '" rise="' + str(icon_rise) + '">'
+        else:
+            span = '<span font="' + fonts[type] + '">'
+            
+        return span + contents + '</span>'
     else:
         return contents
 
 status = Status(standalone = True)
 
 status.register('clock',
-    format = '%a %-d. %B %H:%M',
+    format = format('\ue8df', 'icon') + ' %a %-d. %B %H:%M',
+    hints = {'markup': 'pango'},
 )
 
 status.register('xkblayout', 
-    format = format('\uf11c', 'icon') + ' ' + format('{name}'),
+    format = format('\ue312', 'icon') + ' ' + format('{name} '),
     uppercase = False,
     layouts = ['us', 'de'],
     hints = {'markup': 'pango'},
 )
 
 status.register('pulseaudio',
-    format = format('\uf028', 'icon') + ' ' + format('{volume}') + '  ',
-    format_muted = format('\uf026', 'icon') + ' ' + format('{volume}') + '  ',
+    format = format('\ue050', 'icon') + ' ' + format('{volume}') + '  ',
+    format_muted = format('\ue04f', 'icon') + ' ' + format('{volume}') + '  ',
     color_muted = '#CC6666',
     hints = {'markup': 'pango'},
     multi_click_timeout = 0
@@ -64,8 +71,9 @@ status.register('cpu_usage',
 )
 
 status.register('spotify',
-    format = format('\uf025', 'icon') + '  {artist} - {title}  ',
+    format = '{status} {artist} - {title}  ',
     format_not_running = '',
+	status =  {'paused': format('\ue037', 'icon'), 'playing': format('\ue034', 'icon')},
     hints = {'markup': 'pango'},
 	on_leftclick = None,
 	on_doubleleftclick = 'playpause',
