@@ -3,18 +3,18 @@ syntax enable
 let base16colorspace=256
 colors base16-tomorrow
 
-set background=dark	
-set backspace=indent,eol,start		" improved backspace
-set incsearch						" incremental search
-set number							" line numbers
-set scrolloff=4						" scroll offset
-set showcmd							" show last command
-set showmatch						" show matching parenthesis
-set softtabstop=4					" soft tab stop
-set tabstop=4						" tab stop
-set wildmenu						" visual autocomplete for command menu
+set background=dark 
+set backspace=indent,eol,start      " improved backspace
+set incsearch                       " incremental search
+set number                          " line numbers
+set scrolloff=4                     " scroll offset
+set showcmd                         " show last command
+set showmatch                       " show matching parenthesis
+set softtabstop=4                   " soft tab stop
+set tabstop=4                       " tab stop
+set wildmenu                        " visual autocomplete for command menu
 
-filetype indent on					" file type specific indents 
+filetype indent on                  " file type specific indents 
 
 " turn off search hightlight
-nnoremap <leader><space> :nohlsearch<CR>	
+nnoremap <leader><space> :nohlsearch<CR>    
