@@ -1,0 +1,10 @@
+[Unit]
+Description=Sets a new wallpaper from Reddit every day
+
+[Timer]
+OnCalendar=*-*-* 10:00:00
+Unit=wallpaper.service
+Persistent=true
+
+[Install]
+WantedBy=default.target
