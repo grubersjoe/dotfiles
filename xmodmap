@@ -2,11 +2,9 @@
 keycode 133 = Mode_switch 
 keycode 134 = Mode_switch 
 
-! disable the <> key of German keyboard
-keycode 94 = 
-
-keysym e = e E EuroSign
-keysym a = a A adiaeresis Adiaeresis
-keysym o = o O odiaeresis Odiaeresis
-keysym u = u U udiaeresis Udiaeresis
-keysym s = s S ssharp
+! Enable German umlaute
+keycode 26 = e E EuroSign
+keycode 32 = o O odiaeresis Odiaeresis
+keycode 30 = u U udiaeresis Udiaeresis
+keycode 38 = a A adiaeresis Adiaeresis
+keycode 39 = s S ssharp
