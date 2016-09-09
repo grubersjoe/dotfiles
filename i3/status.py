@@ -1,5 +1,7 @@
 import locale
-from i3pystatus import Status
+from i3pystatus import Status, get_module
+from subprocess import call
+from os.path import expanduser
 
 locale.setlocale(locale.LC_ALL, 'de_DE.utf8')
 
@@ -22,6 +24,12 @@ def setfont(contents, font='fixed'):
         return contents
 
 
+@get_module
+def xkblayout_leftclick(self):
+    self.change_layout()
+    call(['xmodmap', expanduser('~/.Xmodmap')])
+
+
 status = Status(standalone=True)
 
 status.register(
@@ -34,8 +42,9 @@ status.register(
     'xkblayout',
     format=setfont('\ue312', 'icon') + ' ' + setfont('{name} '),
     uppercase=False,
-    layouts=['us', 'de', 'fr'],
+    layouts=['us', 'de'],
     hints={'markup': 'pango'},
+    on_leftclick=[xkblayout_leftclick]
 )
 
 status.register(
@@ -44,7 +53,7 @@ status.register(
     format_muted=setfont('\ue04f', 'icon') + ' ' + setfont('{volume}') + '  ',
     color_muted='#CC6666',
     hints={'markup': 'pango'},
-    multi_click_timeout=0
+    multi_click_timeout=0,
 )
 
 status.register(
@@ -81,7 +90,10 @@ status.register(
     'spotify',
     format='{status} {artist} - {title}  ',
     format_not_running='',
-    status={'paused': setfont('\ue037', 'icon'), 'playing': setfont('\ue034', 'icon')},
+    status={
+        'paused': setfont('\ue037', 'icon'),
+        'playing': setfont('\ue034', 'icon')
+    },
     hints={'markup': 'pango'},
     on_leftclick=None,
     on_doubleleftclick='playpause',
