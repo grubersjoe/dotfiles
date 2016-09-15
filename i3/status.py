@@ -6,13 +6,17 @@ from os.path import expanduser
 locale.setlocale(locale.LC_ALL, 'de_DE.utf8')
 
 fonts = {
-    'fixed': 'Meslo LG M DZ 11',
+    'sans': 'Fira Sans Regular 13',
+    'mono': 'Meslo LG M DZ 11',
     'icon': 'Material Icons 13',
 }
 icon_rise = -2500
 
 
-def setfont(contents, font='fixed'):
+def spacer(width=6):
+    return '<span font="Fira Sans Regular 6">' + (' ' * width) + '</span>'
+
+def font(contents, font='mono'):
     if font in fonts.keys():
         if font == 'icon':
             span = '<span font="' + fonts[font] + '" rise="' + str(icon_rise) + '">'
@@ -22,7 +26,6 @@ def setfont(contents, font='fixed'):
         return span + contents + '</span>'
     else:
         return contents
-
 
 @get_module
 def xkblayout_leftclick(self):
@@ -34,13 +37,13 @@ status = Status(standalone=True)
 
 status.register(
     'clock',
-    format=setfont('\ue8df', 'icon') + ' %a %-d. %B %H:%M',
+    format=font('\ue878', 'icon') + font(' %a %-d. %B %H:%M', 'sans'),
     hints={'markup': 'pango'},
 )
 
 status.register(
     'xkblayout',
-    format=setfont('\ue312', 'icon') + ' ' + setfont('{name} '),
+    format=font('\ue312', 'icon') + font(' ', 'sans') + font('{name}') + spacer(),
     uppercase=False,
     layouts=['us', 'de'],
     hints={'markup': 'pango'},
@@ -49,8 +52,8 @@ status.register(
 
 status.register(
     'pulseaudio',
-    format=setfont('\ue050', 'icon') + ' ' + setfont('{volume}') + '  ',
-    format_muted=setfont('\ue04f', 'icon') + ' ' + setfont('{volume}') + '  ',
+    format=font('\ue050', 'icon') + font(' ', 'sans') + font('{volume}') + spacer(),
+    format_muted=font('\ue04f', 'icon') + font(' ', 'sans') + font('{volume}') + spacer(),
     color_muted='#CC6666',
     hints={'markup': 'pango'},
     multi_click_timeout=0,
@@ -58,20 +61,20 @@ status.register(
 
 status.register(
     'uptime',
-    format='UP ' + setfont('{days}d {hours}h {mins}m') + '  ',
+    format=font('UP ', 'sans') + font('{days}d {hours}h {mins}m') + spacer(),
     hints={'markup': 'pango'},
 )
 
 status.register(
     'load',
-    format='Load ' + setfont('{avg1} {avg5} {avg15}') + '  ',
+    format=font('Load ', 'sans') + font('{avg1} {avg5} {avg15}') + spacer(),
     critical_limit=5.5,
     hints={'markup': 'pango'},
 )
 
 status.register(
     'mem',
-    format='MEM ' + setfont('{percent_used_mem}') + '%  ',
+    format=font('MEM ', 'sans') + font('{percent_used_mem}') + font('%', 'sans') + spacer(),
     divisor=1024 ** 3,
     color='#ffffff',
     round_size=None,
@@ -82,21 +85,22 @@ status.register(
 
 status.register(
     'cpu_usage',
-    format='CPU ' + setfont('{usage:02}') + '%  ',
+    format=font('CPU ', 'sans') + font('{usage:02}') + font('%', 'sans') + spacer(),
     hints={'markup': 'pango'},
 )
 
 status.register(
-    'spotify',
-    format='{status} {artist} - {title}  ',
-    format_not_running='',
+    'now_playing',
+    format=font('{status} {artist} - {title}', 'sans') + spacer(),
     status={
-        'paused': setfont('\ue037', 'icon'),
-        'playing': setfont('\ue034', 'icon')
+        'stop': font('\ue037', 'icon'),
+        'pause': font('\ue037', 'icon'),
+        'play': font('\ue034', 'icon')
     },
     hints={'markup': 'pango'},
     on_leftclick=None,
     on_doubleleftclick='playpause',
 )
+
 
 status.run()
