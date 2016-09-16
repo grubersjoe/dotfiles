@@ -14,3 +14,6 @@ fi
 
 ~/.i3/make-config.sh
 exec i3
+
+# Set wallpaper
+feh --bg-scale ~/.wallpaper/wallpaper.jpg
