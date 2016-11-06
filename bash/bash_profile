@@ -1,11 +1,14 @@
 # ~/.bash_profile (GNU/Linux)
 
+# Own programs
+PATH=${HOME}/.local/bin:$PATH
+
 # Ruby Gems
 PATH=$PATH:$(ruby -rubygems -e "puts Gem.user_dir")/bin
 
 # NPM packages
 NPM_PACKAGES="${HOME}/.npm-packages"
-PATH="$NPM_PACKAGES/bin:$PATH"
+PATH="$PATH:$NPM_PACKAGES/bin"
 
 export EDITOR="vim"
 export TERMINAL="lxterminal"
