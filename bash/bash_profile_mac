@@ -1,5 +1,9 @@
 # ~/.bash_profile (Mac OS)
 
+# Own programs
+PATH=${HOME}/.local/bin:$PATH
+
+
 # Homebrew installs some programs to /usr/local/sbin
 export PATH="/usr/local/sbin:$PATH"
 
