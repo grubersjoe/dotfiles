@@ -18,7 +18,7 @@ shopt -s checkwinsize
 # Aliases
 alias aur='yaourt'
 alias df='df -h'
-alias diff='colordiff -y --width=$COLUMNS'
+alias diff='colordiff'
 alias ls='ls --color=auto --group-directories-first'
 alias ll='ls -lh'
 alias la='ll -a'
