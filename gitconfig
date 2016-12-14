@@ -1,17 +1,26 @@
+[alias]
+    a = add
+    b = branch
+    c = commit
+    co = checkout
+    d = diff
+    s = status
+    p = push
+
 [core]
-	autocrlf = input
+    autocrlf = input
 
 [credential]
-	helper = cache --timeout=1800
+    helper = cache --timeout=1800
 
 [diff]
     tool = meld
 
 [difftool]
-	prompt = false
+    prompt = false
 
 [push]
-	default = simple
+    default = simple
 
 [user]
     name = Jonathan Gruber
