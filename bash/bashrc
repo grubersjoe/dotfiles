@@ -19,6 +19,8 @@ shopt -s checkwinsize
 alias aur='yaourt'
 alias df='df -h'
 alias diff='colordiff'
+alias evince='atril'
+alias eog='eom'
 alias ls='ls --color=auto --group-directories-first'
 alias ll='ls -lh'
 alias la='ll -a'
@@ -27,7 +29,7 @@ alias grep='grep --color=auto'
 alias gsc='gnome-screenshot -i'
 alias gparted='gksudo -k gparted'
 alias mkdir='mkdir -pv'
-alias rsync='rsync -avh --info=progress2'
+alias rsync='rsync -a -v -h -L --info=progress2'
 alias open='xdg-open'
 
 # Base16 Shell
