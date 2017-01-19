@@ -45,7 +45,3 @@ fi
 
 # Set shell window title
 PROMPT_COMMAND='echo -ne "\033]0;${PWD}\007"'
-
-# Happy shell startup
-echo -n $(tput setaf 3)
-fortune chucknorris 
