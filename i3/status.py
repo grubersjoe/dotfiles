@@ -5,13 +5,13 @@ from os.path import expanduser
 
 locale.setlocale(locale.LC_ALL, 'de_DE.utf8')
 
-fonts = {
+FONTS = {
     'sans': {
-        'typeface': 'Fira Sans Regular 13',
+        'typeface': 'RobotoCondensed 14',
         'rise': 0
     },
     'mono': {
-        'typeface': 'Meslo LG M DZ 11',
+        'typeface': 'RobotoMono 12',
         'rise': 0
     },
     'icon': {
@@ -20,14 +20,33 @@ fonts = {
     }
 }
 
+COLORS = {
+    "Background"  : "#1d1f21",
+    "CurrentLine" : "#282a2e",
+    "Selection"   : "#373b41",
+    "Foreground"  : "#c5c8c6",
+    "Comment"     : "#969896",
+    "Red"         : "#cc6666",
+    "Orange"      : "#de935f",
+    "Yellow"      : "#f0c674",
+    "Green"       : "#b5bd68",
+    "Aqua"        : "#8abeb7",
+    "Blue"        : "#81a2be",
+    "Blue"        : "#b294bb"
+}   
 
-def spacer(width=6):
+
+
+def spacer(width=8):
     return '<span font="Fira Sans Regular 6">' + (' ' * width) + '</span>'
 
 
-def font(contents, font='mono'):
-    if font in fonts.keys():
-        span = '<span font="' + str(fonts[font]['typeface']) + '" rise="' + str(fonts[font]['rise']) + '">'
+def font(contents, font='mono', color=''):
+    if font in FONTS.keys():
+        typeface = str(FONTS[font]['typeface'])
+        rise = str(FONTS[font]['rise'])
+        if isinstance(color, str) and len(color) > 0: color = 'fgcolor="{}"'.format(color)
+        span = '<span font="{}" rise="{}" {}>'.format(typeface, rise, color)
 
         return span + contents + '</span>'
     else:
@@ -44,7 +63,7 @@ status = Status(standalone=True)
 
 status.register(
     'clock',
-    format=font('\ue878', 'icon') + font(' %a %-d. %B %H:%M', 'sans'),
+    format=font('\ue878', 'icon') + font(' %a %-d. %B %H:%M', 'sans') + spacer(4),
     hints={'markup': 'pango'},
 )
 
@@ -68,23 +87,25 @@ status.register(
 
 status.register(
     'uptime',
-    format=font('UP ', 'sans') + font('{days}d {hours}h {mins}m') + spacer(),
+    format=font('UP ', 'sans', COLORS['Blue']) + font('{days}d {hours}h {mins}m') + spacer(),
     hints={'markup': 'pango'},
 )
 
 status.register(
     'load',
-    format=font('Load ', 'sans') + font('{avg1} {avg5} {avg15}') + spacer(),
+    format=font('Load ', 'sans', COLORS['Blue']) + font('{avg1} {avg5} {avg15}') + spacer(),
     hints={'markup': 'pango'},
     critical_limit=5.5,
 )
 
 status.register(
     'mem',
-    format=font('MEM ', 'sans') + font('{percent_used_mem}') + font('%', 'sans') + spacer(),
+    format=font('MEM ', 'sans', COLORS['Blue']) + font('{percent_used_mem}') + font('%', 'mono') + spacer(),
     hints={'markup': 'pango'},
     divisor=1024 ** 3,
     color='#ffffff',
+    warn_color='#f0c674',
+    alert_color='#cc6666',
     round_size=None,
     warn_percentage=70,
     alert_percentage=80,
@@ -93,7 +114,7 @@ status.register(
 
 status.register(
     'cpu_usage',
-    format=font('CPU ', 'sans') + font('{usage:02}') + font('%', 'sans') + spacer(),
+    format=font('CPU ', 'sans', COLORS['Blue']) + font('{usage:02}') + font('%', 'mono') + spacer(),
     hints={'markup': 'pango'},
 )
 
