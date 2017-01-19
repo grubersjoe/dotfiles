@@ -12,7 +12,7 @@ vms=( [ie8]="cff5fc40-876e-428c-9875-106e96a61a3d"
 	  [ie11]="4d816a3e-215a-4d70-bf6a-6a8ca6dcf5f4" )
 
 if [ -z "$1" ]; then
-    echo "Argument VM id missing!"
+    echo "Usage: start-vm <vm_name>"
     exit 1
 fi
 
