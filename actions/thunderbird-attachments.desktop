@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Action
+Name=Send as attachment
+Name[de]=Als Anhang verschicken
+Icon=mail-attachment
+Profiles=profile-zero;
+
+[X-Action-Profile profile-zero]
+Exec=/home/joe/.local/share/file-manager/actions/attachments.sh %F
+Name=Default profile
