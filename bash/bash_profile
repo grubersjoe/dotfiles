@@ -13,9 +13,12 @@ PATH="$PATH:$NPM_PACKAGES/bin"
 export EDITOR="vim"
 export TERMINAL="lxterminal"
 
+# Reqired for Qt5 applications
+export XDG_CURRENT_DESKTOP=GNOME
+export QT_STYLE_OVERRIDE=adwaita
+
 export ANDROID_HOME=~/.android-sdk/
 export CL_JDK="/usr/lib/jvm/default"
-export QT_STYLE_OVERRIDE=GTK+
 
 [[ -f ~/.bashrc ]] && . ~/.bashrc
 
