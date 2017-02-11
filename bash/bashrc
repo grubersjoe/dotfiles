@@ -17,6 +17,7 @@ shopt -s checkwinsize
 
 # Aliases
 alias aur='yaourt'
+alias dd='dd status=progress'
 alias df='df -h'
 alias diff='colordiff'
 alias evince='atril'
