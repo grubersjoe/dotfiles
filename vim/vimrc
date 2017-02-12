@@ -1,14 +1,13 @@
 syntax enable
 
 let base16colorspace=256
-colors base16-tomorrow
+colors base16-ashes
 
 set background=dark 
 set backspace=indent,eol,start      " improved backspace
 set expandtab                       " expand tabs to spaces
 set incsearch                       " incremental search
 set ignorecase                      " case insensitive search
-set number                          " line numbers
 set scrolloff=4                     " scroll offset
 set showcmd                         " show last command
 set shiftwidth=4                    " shift width (indent)

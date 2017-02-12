@@ -34,7 +34,7 @@ alias rsync='rsync -a -v -h -L --info=progress2'
 alias open='xdg-open'
 
 # Base16 Shell
-BASE16_SHELL="$HOME/.dotfiles/theme/base16-shell/scripts/base16-tomorrow-night.sh"
+BASE16_SHELL="$HOME/.dotfiles/theme/base16-shell/scripts/base16-ashes.sh"
 [[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
 
 # Prompt
