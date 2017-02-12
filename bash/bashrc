@@ -39,9 +39,9 @@ BASE16_SHELL="$HOME/.dotfiles/theme/base16-shell/scripts/base16-ashes.sh"
 
 # Prompt
 if [ "$EUID" -ne 0 ]; then
-	PS1='\[\e[0;33m\]\h\[\e[0m\] \[\e[0;34m\]\W\[\e[0m\] \[\e[0;34m\]\$\[\e[0m\] '
+	PS1='\[\e[0;32m\]\W\[\e[0m\] \[\e[0;34m\]\$\[\e[0m\] '
 else
-	PS1='\[\e[0;31m\]\h \W \$\[\e[0m\] '
+	PS1='\[\e[0;31m\]\w \$\[\e[0m\] '
 fi
 
 # Set shell window title
