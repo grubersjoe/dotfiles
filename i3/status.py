@@ -37,8 +37,8 @@ COLORS = {
 
 
 
-def spacer(width=8):
-    return '<span font="Fira Sans Regular 6">' + (' ' * width) + '</span>'
+def spacer(width=2):
+    return font((' ' * width), 'mono')
 
 
 def font(contents, font='mono', color=''):
@@ -63,7 +63,7 @@ status = Status(standalone=True)
 
 status.register(
     'clock',
-    format=font('\ue878', 'icon') + font(' %a %-d. %B %H:%M', 'sans') + spacer(4),
+    format=font('\ue878', 'icon') + font(' %a %-d. %B %H:%M', 'sans') + spacer(1),
     hints={'markup': 'pango'},
 )
 
