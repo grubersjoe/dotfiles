@@ -1,11 +1,12 @@
 [alias]
-    a = add
-    b = branch
-    c = commit
+    a  = add
+    b  = branch
+    c  = commit
     co = checkout
-    d = diff
-    s = status
-    p = push
+    d  = diff
+    dd = difftool --dir-diff
+    s  = status
+    p  = push
 
 [core]
     autocrlf = input
