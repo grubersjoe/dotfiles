@@ -10,12 +10,14 @@ function insert_newline {
     done    
 }
 
-host_config="hosts/$(hostname).conf"
 cd ~/.i3/
 cat base.conf > config
 insert_newline 2
-echo "## Host specific config for $(hostname)" >> config
+
+echo "## HOST SPECIFIC CONFIG FOR $(hostname)" >> config
 insert_newline
+host_config="hosts/$(hostname).conf"
 cat $host_config >> config
 insert_newline
+
 i3-msg restart

@@ -12,5 +12,5 @@ if [ -s ~/.Xmodmap ]; then
     xmodmap ~/.Xmodmap
 fi
 
-~/.i3/make-config.sh
+~/.i3/build.sh
 exec i3
