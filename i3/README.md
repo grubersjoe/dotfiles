@@ -4,21 +4,26 @@
 
 This is the heart of my Linux desktop and the configuration files I am most proud of. They are the result of several years of experimenting and trying all kind of different approaches to shape my optimal work environment based on the great [i3 tiling window manager](https://i3wm.org/).
 
-You might notice the `make-config.sh` script. I use a nearly identical Arch Linux based setup at home and at work, but some things like the monitor setup need to be configured independently. Therefore the i3 config file is created dynamically on every startup by concatenating the base configuration file and host specific additions. These extra configuration files live in the `hosts` directory and must be named after the **hostname**.
+You might notice the `build.sh` script. I use a nearly identical Arch Linux based setup at home and at work, but some things like the monitor setup need to be configured independently. Therefore the i3 config file is created dynamically on every startup by concatenating the base configuration file and host specific additions. These extra configuration files live in the `hosts` directory and must be named excactly after the **hostname**.
 
 ### Prerequisities
 
-Various programs are required to use the complete configuration as it is. If you are a fortunate Arch Linux user, you can install all of below packages from the [AUR](https://aur.archlinux.org/ Arch Linux User Repository):
+I use the following programs in my setup. If you are on Arch Linux like myself, you can install all of below packages from the [AUR](https://aur.archlinux.org/ Arch Linux User Repository) easily:
 
+* [`i3pystatus`](https://github.com/enkore/i3pystatus) – a powerful replacement for i3bar
 * [`dmenu2`](https://bitbucket.org/melek/dmenu2) – fork of dmenu - an efficient dynamic menu for X
-* [`i3pystatus`](https://github.com/enkore/i3pystatus) – a replacement for i3bar
 * [`clipmenu`](https://github.com/cdown/clipmenu) – simple clipboard manager using dmenu and xsel
 * [`playerctl`](https://github.com/acrisci/playerctl) – command line utility to control media players
 
 ### Fonts
 
-I admire the beauty of good typography and spend a lot of time to find well-suited font faces. Of course this is mostly a question of personal taste, but here are my favorites, used in this config:
+Typography is very important to me and I spent a lot of time selecting well-suited fonts for my i3 setup. In the past I used the great Fira Sans from Mozilla and the Menlo clone Meslo LG, but recently I switched to the Roboto font family both for sans-serif and monospaced usage:
 
-* [Fira Sans](http://mozilla.github.io/Fira/) – Font family developed by Mozilla for Firefox OS
-* [Meslo LG](https://github.com/andreberg/Meslo-Font) (M DZ variant) – customized version of Apple’s Menlo font
-* [Material Icons](https://design.google.com/icons/) – Material design icons from Google used for icons in the status bar
+* [Roboto {Sans, Condensed, Mono}](https://github.com/google/roboto) – Google's default font family for Android and Chrome OS
+* [Material Icons](https://design.google.com/icons/) – Material Design icon font as well from Google used for icons in the status bar
+
+Of course selecting fonts is mostly a question of personal taste.
+
+## Colors
+
+I'm a great fan of [Chris Kempson's](https://github.com/chriskempson) [base16 project](http://chriskempson.com/projects/base16/) and use it everywhere in my setup. It enables you to build an overall very consistent desktop experience. `i3` itself, the terminal emulator and my preferred text editor  `vim` all use the same color theme. Currently I'm using `base16-ashes`.
