@@ -9,29 +9,25 @@ HISTSIZE=10000
 # Append to the history file, don't overwrite it
 shopt -s histappend
 
-# Prompt
-PS1='\W  '
-
-# Exports
-export CLICOLOR=1
-export EDITOR="vim"
-
-# Base16 Shell
-BASE16_SHELL="$HOME/.dotfiles/theme/base16-shell/scripts/base16-tomorrow-night.sh"
-[[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
-
 # Aliases
 alias df='df -h'
 alias diff='colordiff -y --width=$COLUMNS'
-alias ls='ls --color=auto --group-directories-first'
+alias ls='gls --color=auto --group-directories-first'
 alias ll='ls -lh'
 alias la='ll -a'
 alias grep='grep --color=auto'
 alias mkdir='mkdir -pv'
-alias rsync='rsync -avh --info=progress2'
+alias rsync='/usr/local/bin/rsync -a -v -h -L --info=progress2'
 
 
 # Bash completion
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
     . $(brew --prefix)/etc/bash_completion
 fi
+
+# Base16 Shell
+BASE16_SHELL="$HOME/.dotfiles/theme/base16-shell/scripts/base16-ashes.sh"
+[[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
+
+# Prompt
+PS1='\[\e[1;32m\]\W\[\e[0m\] \[\e[0;34m\]\$\[\e[0m\] '
