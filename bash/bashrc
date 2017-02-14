@@ -19,7 +19,7 @@ shopt -s checkwinsize
 alias aur='yaourt'
 alias dd='dd status=progress'
 alias df='df -h'
-alias diff='colordiff'
+alias diff='colordiff -y --width=$COLUMNS'
 alias evince='atril'
 alias eog='eom'
 alias ls='ls --color=auto --group-directories-first'
