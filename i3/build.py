@@ -1,18 +1,24 @@
 #!/usr/bin/env python3
 
 import i3ipc
-from json import load
+import json
+
+from os import path
 from socket import gethostname
 from shutil import copyfileobj
 
-CONF_FILE = './config'
 
-with open(CONF_FILE, 'w') as config:
+def get_path(filename):
+    return path.join(path.dirname(__file__), filename)
+
+i3conf = get_path('config')
+
+# load the theme file and append it's colors to i3 as variables
+with open(i3conf, 'w') as config:
     try:
-        # load the theme
-        with open('../theme/theme.json') as t:
-            theme = load(t)
-        # and append the variables to i3 config
+        with open(get_path('../theme/theme.json')) as t:
+            theme = json.load(t)
+
         config.write('# THEME\n')
         for name, hexcode in theme.items():
             config.write('set ${} {}\n'.format(name, hexcode))
@@ -21,14 +27,16 @@ with open(CONF_FILE, 'w') as config:
         print('Unable to load theme!')
         raise e
 
-with open(CONF_FILE, 'ab') as config:
-    hostname = gethostname()
-    copyfileobj(open('base.conf', 'rb'), config)
-    config.write(str.encode('\n\n# EXTRA CONFIG FOR *{}*:\n\n'.format(hostname.upper())))
-    copyfileobj(open('hosts/{}.conf'.format(hostname), 'rb'), config)
+# add the remaining config files
+with open(i3conf, 'ab') as config:
+    copyfileobj(open(get_path('base.conf'), 'rb'), config)
 
+    hostname = gethostname()
+    hostconf = get_path('hosts/{}.conf'.format(hostname))
+    title = str.encode('\n\n# EXTRA CONFIG FOR *{}*:\n\n'.format(hostname.upper()))
+    config.write(title)
+    copyfileobj(open(hostconf, 'rb'), config)
+
+# reload i3 
 i3 = i3ipc.Connection()
-try:
-    i3.command('restart')
-except Exception as e:
-    pass
+i3.command('reload')

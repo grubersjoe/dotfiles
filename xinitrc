@@ -12,5 +12,5 @@ if [ -s ~/.Xmodmap ]; then
     xmodmap ~/.Xmodmap
 fi
 
-~/.i3/build.py
 exec i3
+~/.i3/build.py
