@@ -17,5 +17,8 @@ set wildmenu                        " visual autocomplete for command menu
 
 filetype indent on                  " file type specific indents 
 
+" exit insertion mode
+imap jk <Esc>
+
 " turn off search hightlight
 nnoremap <leader><space> :nohlsearch<CR>    
