@@ -27,15 +27,16 @@ with open(i3conf, 'w') as config:
         print('Unable to load theme!')
         raise e
 
-# add the remaining config files
+# add the actual config files
 with open(i3conf, 'ab') as config:
     copyfileobj(open(get_path('base.conf'), 'rb'), config)
 
     hostname = gethostname()
     hostconf = get_path('hosts/{}.conf'.format(hostname))
-    title = str.encode('\n\n# EXTRA CONFIG FOR *{}*:\n\n'.format(hostname.upper()))
-    config.write(title)
-    copyfileobj(open(hostconf, 'rb'), config)
+    if (path.exists(hostconf)):
+        title = str.encode('\n\n# EXTRA CONFIG FOR *{}*:\n\n'.format(hostname.upper()))
+        config.write(title)
+        copyfileobj(open(hostconf, 'rb'), config)
 
 # reload i3 
 i3 = i3ipc.Connection()
