@@ -1,27 +1,24 @@
 # ~/.bash_profile (GNU/Linux)
 
-# Own programs
-PATH=${HOME}/.local/bin:$PATH
-
-# Ruby Gems
-PATH=$PATH:$(ruby -rubygems -e "puts Gem.user_dir")/bin
-
-# NPM packages
-NPM_PACKAGES="${HOME}/.npm-packages"
-PATH="$PATH:$NPM_PACKAGES/bin"
-
 export EDITOR="vim"
 export TERMINAL="lxterminal"
 
-# Reqired for correct theming of Qt5 applications
+# Local programs
+PATH=${HOME}/.local/bin:$PATH
+
+# Correct theming of Qt5 applications
 export XDG_CURRENT_DESKTOP=GNOME
 export QT_QPA_PLATFORMTHEME="qt5ct"
 
-export ANDROID_HOME=~/.android-sdk/
+# Java
 export CL_JDK="/usr/lib/jvm/default"
+export ANDROID_HOME=~/.android-sdk/
+
+# Ruby Gems
+PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
+
+# NPM packages
+NPM_PACKAGES="${HOME}/.npm-packages"
+PATH="$NPM_PACKAGES/bin:$PATH"
 
 [[ -f ~/.bashrc ]] && . ~/.bashrc
-
-if [ -z "$DISPLAY" ] && [ -n "$XDG_VTNR" ] && [ "$XDG_VTNR" -eq 1 ]; then
-    exec startx
-fi
