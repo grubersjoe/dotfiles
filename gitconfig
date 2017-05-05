@@ -12,14 +12,8 @@
 [core]
     autocrlf = input
 
-[credential]
-    helper = /usr/lib/git-core/git-credential-gnome-keyring
-
 [diff]
-    tool = meld
-
-[difftool]
-    prompt = false
+	tool = meld
 
 [push]
     default = simple
