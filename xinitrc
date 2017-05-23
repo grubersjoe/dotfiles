@@ -18,4 +18,4 @@ if [ -s ~/.Xmodmap ]; then
 fi
 
 exec i3
-~/.i3/build.py
+~/.config/i3/build.py
