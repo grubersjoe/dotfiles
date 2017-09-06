@@ -12,6 +12,9 @@
 [core]
     autocrlf = input
 
+[credential]
+	helper = cache
+
 [diff]
 	tool = meld
 
