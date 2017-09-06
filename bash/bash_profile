@@ -3,6 +3,9 @@
 export EDITOR="vim"
 export TERMINAL="lxterminal"
 
+# stderr wrapper
+export LD_PRELOAD="/usr/lib/libstderred.so${LD_PRELOAD:+:$LD_PRELOAD}"
+
 # Local programs
 PATH=${HOME}/.local/bin:$PATH
 
