@@ -30,8 +30,10 @@ alias grep='grep --color=auto'
 alias gsc='gnome-screenshot -i'
 alias gparted='gksudo -k gparted'
 alias mkdir='mkdir -pv'
-alias rsync='rsync -a -v -h -L --info=progress2'
+alias rsync='rsync -avhL --ignore-existing --exclude-from=$HOME/.dotfiles/exclude-list.txt --info=progress2'
 alias open='xdg-open'
+alias ..='cd ..'
+alias ...='cd ../../'
 
 # Base16 Shell
 BASE16_SHELL="$HOME/.dotfiles/theme/base16-shell/scripts/base16-ashes.sh"
