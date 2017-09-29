@@ -1,17 +1,21 @@
-# ~/.bash_profile (GNU/Linux)
+# ~/.profile (GNU/Linux)
 
 export EDITOR="vim"
-export TERMINAL="lxterminal"
+export VISUAL="vim"
+export TERMINAL="xfce4-terminal"
 
 # Local programs
 PATH=${HOME}/.local/bin:$PATH
 
-# Correct theming of Qt5 applications
+# GUI / HiDPI
 export XDG_CURRENT_DESKTOP=GNOME
+export GDK_SCALE=1
 export QT_QPA_PLATFORMTHEME="qt5ct"
+#export QT_SCALE_FACTOR=1.5
 
 # Java
 export ANDROID_HOME=~/.android-sdk/
+export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel'
 
 # Ruby Gems
 PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
