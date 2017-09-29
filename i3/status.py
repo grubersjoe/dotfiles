@@ -38,7 +38,8 @@ THEME = {
     'base0C': '#95AEC7',
     'base0D': '#AE95C7',
     'base0E': '#C795AE',
-    'base0F': '#C79595'
+    'base0F': '#C79595',
+    "base005": "#2B3034"
 }
 
 
@@ -69,13 +70,13 @@ status = Status(standalone=True)
 
 status.register(
     'clock',
-    format=font('\ue878', 'icon', THEME['base0B']) + font(' %a %-d. %B %H:%M', 'sans') + spacer(1),
+    format=font('\ue878', 'icon', THEME['base0C']) + font(' %a %-d. %B %H:%M', 'sans') + spacer(1),
     hints={'markup': 'pango'},
 )
 
 status.register(
     'xkblayout',
-    format=font('\ue312', 'icon', THEME['base0B']) + font(' ', 'sans') + font('{name}') + spacer(),
+    format=font('\ue312', 'icon', THEME['base0C']) + font(' ', 'sans') + font('{name}') + spacer(),
     hints={'markup': 'pango'},
     uppercase=False,
     layouts=['us', 'de'],
@@ -84,7 +85,7 @@ status.register(
 
 status.register(
     'pulseaudio',
-    format=font('\ue050', 'icon', THEME['base0B']) + font(' ', 'sans') + font('{volume}') + spacer(),
+    format=font('\ue050', 'icon', THEME['base0C']) + font(' ', 'sans') + font('{volume}') + spacer(),
     format_muted=font('\ue04f', 'icon') + font(' ', 'sans') + font('{volume}') + spacer(),
     hints={'markup': 'pango'},
     color_muted='#CC6666',
@@ -93,20 +94,20 @@ status.register(
 
 status.register(
     'uptime',
-    format=font('UP ', 'sans', THEME['base0B']) + font('{days}d {hours}h {mins}m') + spacer(),
+    format=font('UP ', 'sans', THEME['base0C']) + font('{days}d {hours}h {mins}m') + spacer(),
     hints={'markup': 'pango'},
 )
 
 status.register(
     'load',
-    format=font('Load ', 'sans', THEME['base0B']) + font('{avg1} {avg5} {avg15}') + spacer(),
+    format=font('Load ', 'sans', THEME['base0C']) + font('{avg1} {avg5} {avg15}') + spacer(),
     hints={'markup': 'pango'},
     critical_limit=5.5,
 )
 
 status.register(
     'mem',
-    format=font('MEM ', 'sans', THEME['base0B']) + font('{percent_used_mem}') + font('%', 'mono') + spacer(),
+    format=font('MEM ', 'sans', THEME['base0C']) + font('{percent_used_mem}') + font('%', 'mono') + spacer(),
     hints={'markup': 'pango'},
     divisor=1024 ** 3,
     color=THEME['base05'],
@@ -120,7 +121,7 @@ status.register(
 
 status.register(
     'cpu_usage',
-    format=font('CPU ', 'sans', THEME['base0B']) + font('{usage:02}') + font('%', 'mono') + spacer(),
+    format=font('CPU ', 'sans', THEME['base0C']) + font('{usage:02}') + font('%', 'mono') + spacer(),
     hints={'markup': 'pango'},
 )
 
@@ -129,9 +130,9 @@ status.register(
     format=font('{status} {artist} - {title}', 'sans') + spacer(),
     hints={'markup': 'pango'},
     status={
-        'stop': font('\ue037', 'icon', THEME['base0B']),
-        'pause': font('\ue037', 'icon', THEME['base0B']),
-        'play': font('\ue034', 'icon', THEME['base0B'])
+        'stop': font('\ue037', 'icon', THEME['base0C']),
+        'pause': font('\ue037', 'icon', THEME['base0C']),
+        'play': font('\ue034', 'icon', THEME['base0C'])
     },
     on_leftclick=None,
     on_doubleleftclick='playpause',
