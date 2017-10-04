@@ -1,6 +1,6 @@
 # ~/.profile (Mac OS)
 
-# Own programs
+# Local programs
 PATH=${HOME}/.local/bin:$PATH
 
 # Homebrew installs some programs to /usr/local/sbin
@@ -18,5 +18,8 @@ export PATH=$(brew --prefix ruby)/bin:$PATH
 
 export EDITOR="vim"
 export CLICOLOR=1
+
+# Bash completion (Homebrew)
+[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
 
 [[ -f ~/.bashrc ]] && . ~/.bashrc
