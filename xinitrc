@@ -17,5 +17,5 @@ if [ -s ~/.Xmodmap ]; then
     xmodmap ~/.Xmodmap
 fi
 
-exec i3
 ~/.config/i3/build.py
+exec i3
