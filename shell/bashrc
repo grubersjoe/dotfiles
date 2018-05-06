@@ -20,32 +20,21 @@ alias aur='yaourt'
 alias dd='dd status=progress'
 alias df='df -h'
 alias diff='colordiff -y --width=$COLUMNS'
-alias evince='atril'
-alias eog='eom'
 alias ls='ls --color=auto --group-directories-first'
 alias ll='ls -lh'
 alias la='ll -a'
 alias lsblk='lsblk -o +LABEL'
 alias grep='grep --color=auto'
-alias gsc='gnome-screenshot -i'
-alias gparted='gksudo -k gparted'
 alias mkdir='mkdir -pv'
 alias rsync='rsync -avhL --ignore-existing --exclude-from=$HOME/.dotfiles/exclude-list.txt --info=progress2'
 alias open='xdg-open'
 alias ..='cd ..'
 alias ...='cd ../../'
 
-# Base16 Shell
-BASE16_SHELL_SET_BACKGROUND=false
-BASE16_SHELL="$HOME/.dotfiles/theme/base16-shell/scripts/base16-ashes.sh"
-[[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
-
 # Prompt
 if [ "$EUID" -ne 0 ]; then
-	PS1='\[\e[0;32m\]\W\[\e[0m\] \[\e[0;34m\]\$\[\e[0m\] '
+    PS1='\[\e[0;32m\]\W\[\e[0m\] \[\e[0;34m\]\$\[\e[0m\] '
 else
-	PS1='\[\e[0;31m\]\w \$\[\e[0m\] '
+    PS1='\[\e[0;31m\]\w \$\[\e[0m\] '
 fi
 
-# Set shell window title
-PROMPT_COMMAND='echo -ne "\033]0;${PWD}\007"'
