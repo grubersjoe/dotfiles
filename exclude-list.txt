@@ -1,5 +1,7 @@
 .git
 .svn
 .idea
+.vendor
+.bundle
 node_modules
 bower_components
