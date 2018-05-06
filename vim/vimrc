@@ -1,8 +1,5 @@
 syntax enable
 
-let base16colorspace=256
-colors base16-ashes
-
 set background=dark 
 set backspace=indent,eol,start      " improved backspace
 set encoding=utf-8                  " always use UTF-8
