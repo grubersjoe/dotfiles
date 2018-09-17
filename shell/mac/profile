@@ -10,8 +10,11 @@ export PATH="/usr/local/sbin:$PATH"
 NPM_PACKAGES="${HOME}/.npm-packages"
 export PATH="$NPM_PACKAGES/bin:$PATH"
 
-# Ruby Gems
+# Homebrew: Ruby
 export PATH=$(brew --prefix ruby)/bin:$PATH
+
+# Homebrew: Qt
+export PATH="$(brew --prefix qt)/bin:$PATH"
 
 export EDITOR="vim"
 export CLICOLOR=1

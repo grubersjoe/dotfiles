@@ -1,1 +1,1 @@
-../../theme/base16-vim/colors/base16-ashes.vim
+/Users/joe/.dotfiles/theme/base16-vim/colors/base16-ashes.vim
