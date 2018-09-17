@@ -4,7 +4,7 @@
 # Don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
 HISTCONTROL=ignoreboth
-HISTSIZE=10000
+HISTSIZE=100000
 
 # Append to the history file, don't overwrite it
 shopt -s histappend
@@ -16,7 +16,7 @@ alias ls='gls --color=auto --group-directories-first'
 alias ll='ls -lh'
 alias la='ll -a'
 alias grep='grep --color=auto'
-alias mkdir='mkdir -pv'
+alias mkdir='gmkdir -pv'
 alias rsync='/usr/local/bin/rsync -a -v -h -L --info=progress2'
 
 

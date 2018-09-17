@@ -6,11 +6,17 @@ PATH=${HOME}/.local/bin:$PATH
 # Homebrew installs some programs to /usr/local/sbin
 export PATH="/usr/local/sbin:$PATH"
 
+# Node
+export PATH="/usr/local/opt/node@8/bin:$PATH"
+
 # NPM
 NPM_PACKAGES="${HOME}/.npm-packages"
 export PATH="$NPM_PACKAGES/bin:$PATH"
 
-# Homebrew: Ruby
+# Global composer packages
+export PATH="${HOME}/.composer/vendor/bin:$PATH"
+
+# Ruby Gems
 export PATH=$(brew --prefix ruby)/bin:$PATH
 
 # Homebrew: Qt
