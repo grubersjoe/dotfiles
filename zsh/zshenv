@@ -1,0 +1,18 @@
+# ~/.zshenv
+
+export EDITOR="vim"
+export VISUAL="vim"
+export TERMINAL="konsole"
+
+# SSH
+export SSH_ASKPASS="/usr/bin/ksshaskpass"
+
+# Local programs
+PATH=${HOME}/.local/bin:$PATH
+
+# Ruby Gems
+PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
+
+# NPM packages
+NPM_PACKAGES="${HOME}/.npm-packages"
+PATH="$NPM_PACKAGES/bin:$PATH"

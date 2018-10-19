@@ -1,0 +1,45 @@
+source /usr/share/zsh/share/antigen.zsh
+
+antigen use oh-my-zsh
+
+zstyle :omz:plugins:ssh-agent identities id_rsa
+
+antigen bundle ssh-agent
+antigen bundle git
+antigen bundle yarn
+
+antigen bundle zsh-users/zsh-syntax-highlighting
+
+antigen theme robbyrussell
+
+antigen apply
+
+# ---
+
+HISTFILE=~/.histfile
+HISTSIZE=4096
+SAVEHIST=4096
+
+setopt incappendhistory autocd nomatch notify
+
+bindkey -e
+bindkey '^R' history-incremental-search-backward
+
+# Completion system
+zstyle :compinstall filename '/home/joe/.zshrc'
+autoload -Uz compinit
+compinit
+
+alias sudo='sudo '
+alias dd='dd status=progress'
+alias df='df -h'
+alias diff='colordiff -y --width=$COLUMNS'
+alias ls='ls -h --color --group-directories-first'
+alias ll='ls -l'
+alias la='ll -a'
+alias lsblk='lsblk -o +LABEL'
+alias grep='grep --color=auto'
+alias mkdir='mkdir -pv'
+alias rsync='rsync -avhL --ignore-existing --exclude-from=$HOME/.dotfiles/exclude-list.txt --info=progress2'
+alias open='xdg-open'
+
