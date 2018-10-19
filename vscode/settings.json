@@ -1,0 +1,32 @@
+{
+    "editor.fontFamily": "Fira Code, 'monospace', monospace, 'Droid Sans Fallback'",
+    "editor.fontSize": 14,
+    "files.trimTrailingWhitespace": true,
+    "window.menuBarVisibility": "toggle",
+    "editor.tabSize": 2,
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        ".idea/": true,
+        ".cache/": true,
+        "node_modules": true
+    },
+    "html.autoClosingTags": false,
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.activityBar.visible": true,
+    "window.zoomLevel": 0,
+    "workbench.sideBar.location": "left",
+    "editor.renderWhitespace": "none",
+    "editor.renderControlCharacters": false,
+    "editor.fontLigatures": true,
+    "editor.fontWeight": "500",
+    "workbench.colorTheme": "Visual Studio Dark",
+    "files.associations": {
+        "*.js": "javascriptreact"
+    },
+    // Workaround for Duplicate Definition bug
+    "typescript.tsdk": "/home/joe/.npm-packages/lib/node_modules/typescript/lib/"
+}

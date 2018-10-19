@@ -4,3 +4,6 @@
 [submodule "theme/base16-vim"]
 	path = theme/base16-vim
 	url = git://github.com/chriskempson/base16-vim.git
+[submodule "theme/base16-konsole"]
+	path = theme/base16-konsole
+	url = https://github.com/cskeeters/base16-konsole

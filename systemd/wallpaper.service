@@ -1,8 +1,0 @@
-[Unit]
-Description=Sets a new wallpaper from Reddit every day
-RefuseManualStart=no
-RefuseManualStop=no
-
-[Service]
-Type=oneshot
-ExecStart=/usr/bin/wallpaper-reddit --startup
