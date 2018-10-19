@@ -1,0 +1,7 @@
+[Common]
+OutlineCloseButton=false
+ShadowSize=20
+ShadowStrength=64
+
+[Windeco]
+DrawSizeGrip=false
