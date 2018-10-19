@@ -7,7 +7,6 @@
     dd = difftool --dir-diff
     s  = status
     p  = pull
-    pu = push
 
 [core]
     autocrlf = input
