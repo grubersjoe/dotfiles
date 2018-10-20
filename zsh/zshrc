@@ -6,6 +6,7 @@ zstyle :omz:plugins:ssh-agent identities id_rsa
 
 antigen bundle ssh-agent
 antigen bundle git
+antigen bundle debian
 antigen bundle yarn
 
 antigen bundle zsh-users/zsh-syntax-highlighting
