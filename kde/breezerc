@@ -1,7 +1,8 @@
 [Common]
-OutlineCloseButton=false
-ShadowSize=20
+OutlineCloseButton=true
+ShadowSize=ShadowMedium
 ShadowStrength=64
 
 [Windeco]
+ButtonSize=ButtonSmall
 DrawSizeGrip=false

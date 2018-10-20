@@ -1,8 +1,8 @@
 [Appearance]
 AntiAliasFonts=true
-BoldIntense=true
-ColorScheme=base16-default-dark
-Font=Fira Code,11,-1,5,50,0,0,0,0,0,Regular
+BoldIntense=false
+ColorScheme=base16-joe
+Font=Fira Code,12,-1,5,50,0,0,0,0,0,Regular
 UseFontLineChararacters=true
 
 [Cursor Options]
