@@ -3,13 +3,13 @@
         "javascriptreact",
         "typescriptreact"
     ],
-    "breadcrumbs.enabled": true,
     "breadcrumbs.symbolPath": "off",
     "diffEditor.ignoreTrimWhitespace": false,
     "editor.cursorSmoothCaretAnimation": true,
     "editor.dragAndDrop": false,
     "editor.fontFamily": "Fira Code, 'monospace', monospace, 'Droid Sans Fallback'",
     "editor.fontLigatures": true,
+    "editor.fontSize": 13,
     "editor.rulers": [
         120
     ],
@@ -34,17 +34,16 @@
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
     "javascript.preferences.quoteStyle": "single",
-    "search.exclude": {
-        "**/bower_components": false
-    },
+    "materialTheme.accent": "Remove accents",
+    "materialTheme.autoApplyIcons": false,
     "search.smartCase": true,
     "terminal.external.linuxExec": "konsole",
     "typescript.preferences.quoteStyle": "single",
     "window.menuBarVisibility": "toggle",
-    "window.restoreWindows": "all",
-    "window.zoomLevel": 0.25,
-    "workbench.activityBar.visible": false,
-    "workbench.colorTheme": "Visual Studio Dark",
+    "window.restoreWindows": "folders",
+    "window.zoomLevel": 0.4,
+    "workbench.colorCustomizations": {},
+    "workbench.colorTheme": "Material Theme Darker High Contrast",
     "workbench.commandPalette.history": 80,
     "workbench.editor.labelFormat": "short",
     "workbench.sideBar.location": "left",
