@@ -2,9 +2,6 @@ source /usr/share/zsh/share/antigen.zsh
 
 antigen use oh-my-zsh
 
-zstyle :omz:plugins:ssh-agent identities id_rsa
-
-antigen bundle ssh-agent
 antigen bundle git
 antigen bundle yarn
 
