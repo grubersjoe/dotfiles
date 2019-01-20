@@ -1,32 +1,54 @@
 {
+    "auto-rename-tag.activationOnLanguage": [
+        "javascriptreact",
+        "typescriptreact"
+    ],
+    "breadcrumbs.enabled": true,
+    "breadcrumbs.symbolPath": "off",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.cursorSmoothCaretAnimation": true,
+    "editor.dragAndDrop": false,
     "editor.fontFamily": "Fira Code, 'monospace', monospace, 'Droid Sans Fallback'",
-    "editor.fontSize": 14,
-    "files.trimTrailingWhitespace": true,
-    "window.menuBarVisibility": "toggle",
-    "editor.tabSize": 2,
-    "files.exclude": {
-        "**/.git": true,
-        "**/.svn": true,
-        "**/.hg": true,
-        "**/CVS": true,
-        "**/.DS_Store": true,
-        ".idea/": true,
-        ".cache/": true,
-        "node_modules": true
-    },
-    "html.autoClosingTags": false,
-    "workbench.startupEditor": "newUntitledFile",
-    "workbench.activityBar.visible": true,
-    "window.zoomLevel": 0,
-    "workbench.sideBar.location": "left",
-    "editor.renderWhitespace": "none",
-    "editor.renderControlCharacters": false,
     "editor.fontLigatures": true,
-    "editor.fontWeight": "500",
-    "workbench.colorTheme": "Visual Studio Dark",
+    "editor.rulers": [
+        120
+    ],
+    "editor.smoothScrolling": true,
+    "editor.tabCompletion": "on",
+    "editor.tabSize": 2,
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 120,
     "files.associations": {
         "*.js": "javascriptreact"
     },
-    // Workaround for Duplicate Definition bug
-    "typescript.tsdk": "/home/joe/.npm-packages/lib/node_modules/typescript/lib/"
+    "files.exclude": {
+        "**/.DS_Store": true,
+        "**/.git": true,
+        "**/.hg": true,
+        "**/.svn": true,
+        "**/CVS": true,
+        ".cache/": true,
+        ".idea/": true,
+        "node_modules": true
+    },
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+    "javascript.preferences.quoteStyle": "single",
+    "search.exclude": {
+        "**/bower_components": false
+    },
+    "search.smartCase": true,
+    "terminal.external.linuxExec": "konsole",
+    "typescript.preferences.quoteStyle": "single",
+    "window.menuBarVisibility": "toggle",
+    "window.restoreWindows": "all",
+    "window.zoomLevel": 0.25,
+    "workbench.activityBar.visible": false,
+    "workbench.colorTheme": "Visual Studio Dark",
+    "workbench.commandPalette.history": 80,
+    "workbench.editor.labelFormat": "short",
+    "workbench.sideBar.location": "left",
+    "workbench.startupEditor": "welcomePageInEmptyWorkbench",
+    "workbench.statusBar.feedback.visible": false,
+    "workbench.view.alwaysShowHeaderActions": true
 }

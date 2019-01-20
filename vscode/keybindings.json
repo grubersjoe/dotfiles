@@ -5,17 +5,8 @@
         "command": "workbench.action.files.saveAll"
     },
     {
-        "key": "ctrl+s",
-        "command": "-workbench.action.files.save"
-    },
-    {
         "key": "alt+l",
         "command": "editor.action.formatDocument",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "ctrl+shift+i",
-        "command": "-editor.action.formatDocument",
         "when": "editorTextFocus && !editorReadonly"
     }
 ]
