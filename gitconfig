@@ -17,6 +17,9 @@
 [diff]
 	tool = meld
 
+[difftool "diffpdf"]
+    cmd = diffpdf "$LOCAL" "$REMOTE"
+
 [push]
     default = simple
 
