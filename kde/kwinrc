@@ -31,7 +31,7 @@ TabBox=false
 TabBoxAlternative=false
 
 [Effect-Slide]
-Duration=200
+Duration=500
 
 [ModifierOnlyShortcuts]
 Meta=
@@ -75,11 +75,11 @@ DesktopLayout=org.kde.breeze.desktop
 DesktopListLayout=org.kde.breeze.desktop
 DesktopMode=1
 HighlightWindows=true
-LayoutName=thumbnails
+LayoutName=org.kde.breeze.desktop
 MinimizedMode=0
 MultiScreenMode=0
 ShowDesktopMode=0
-ShowTabBox=true
+ShowTabBox=false
 SwitchingMode=0
 
 [TabBoxAlternative]
