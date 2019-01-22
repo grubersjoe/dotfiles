@@ -4,12 +4,14 @@
     c  = commit
     co = checkout
     d  = diff
+    dc = diff --cached
     dd = difftool --dir-diff
     s  = status
     p  = pull
 
 [core]
     autocrlf = input
+    excludesfile = ~/.gitignore
 
 [credential]
 	helper = cache
