@@ -3,6 +3,7 @@
     "javascriptreact",
     "typescriptreact"
   ],
+  "breadcrumbs.enabled": false,
   "breadcrumbs.symbolPath": "off",
   "diffEditor.ignoreTrimWhitespace": false,
   "editor.cursorSmoothCaretAnimation": true,
@@ -10,7 +11,10 @@
   "editor.fontFamily": "Fira Code, 'monospace', monospace, 'Droid Sans Fallback'",
   "editor.fontLigatures": true,
   "editor.fontSize": 13,
+  "editor.minimap.enabled": false,
   "editor.minimap.showSlider": "always",
+  "editor.renderControlCharacters": false,
+  "editor.renderWhitespace": "none",
   "editor.rulers": [
     120
   ],
@@ -148,6 +152,7 @@
     "**/.hg": true,
     "**/.svn": true,
     "**/CVS": true,
+    "*.kilepr": true,
     ".cache/": true,
     ".idea/": true,
     ".kile/": true,
@@ -164,10 +169,30 @@
   "materialTheme.autoApplyIcons": false,
   "search.smartCase": true,
   "terminal.external.linuxExec": "konsole",
+  "todohighlight.defaultStyle": {
+    "borderRadius": "2px",
+    "color": "black"
+  },
+  "todohighlight.keywords": [
+    {
+      "backgroundColor": "#e53935",
+      "text": "FIXME"
+    },
+    {
+      "backgroundColor": "#fbc02d",
+      "text": "TODO"
+    },
+    {
+      "backgroundColor": "#4caf50",
+      "text": "REVIEW"
+    }
+  ],
   "typescript.preferences.quoteStyle": "single",
   "window.menuBarVisibility": "toggle",
   "window.restoreWindows": "folders",
+  "window.titleBarStyle": "native",
   "window.zoomLevel": 0.5,
+  "workbench.activityBar.visible": true,
   "workbench.colorTheme": "Material Theme Darker High Contrast",
   "workbench.commandPalette.history": 80,
   "workbench.editor.labelFormat": "short",
