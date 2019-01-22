@@ -39,3 +39,8 @@ alias grep='grep --color=auto'
 alias mkdir='mkdir -pv'
 alias rsync='rsync -avhL --ignore-existing --exclude-from=$HOME/.dotfiles/exclude-list.txt --info=progress2'
 alias open='xdg-open'
+
+alias dcb="docker-compose build"
+alias dcp="docker-compose pull"
+alias dcu="docker-compose up"
+alias dpbu="dcp && dcb && dcu"
