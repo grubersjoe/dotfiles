@@ -1,0 +1,9 @@
+#!/bin/sh
+read -r -p "Optimize ALL the *.{jpg,png} in $(pwd) recursively? [y/N] " response
+
+if [[ $response =~ ^([yY])$ ]]; then
+    find . -iname '*.jpg' -exec jpegoptim --strip-all --all-progressive {} +
+    find . -iname '*.png' -exec optipng -o3 -strip all {} +
+fi
+
+

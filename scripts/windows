@@ -1,0 +1,7 @@
+#!/bin/sh
+read -r -p "Boot to Windows? [y/N] " response
+
+if [[ $response =~ ^([yY])$ ]]; then
+	sudo grub-reboot 2
+	sudo systemctl reboot
+fi

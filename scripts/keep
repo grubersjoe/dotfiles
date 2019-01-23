@@ -1,0 +1,2 @@
+#!/bin/sh
+/usr/bin/chromium --profile-directory=Default --app-id=hmjkmjkepdijhoojdojkdfohbdgmmhki > /dev/null
