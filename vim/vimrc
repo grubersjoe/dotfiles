@@ -11,6 +11,8 @@ set showcmd                         " show last command
 set shiftwidth=4                    " shift width (indent)
 set softtabstop=4                   " treat four spaces like a tab (backspace)
 set tabstop=4                       " tab stop
+set undofile                        " persistent undo
+set undodir=$HOME/.vim/undo
 set wildmenu                        " visual autocomplete for command menu
 
 filetype indent on                  " file type specific indents 

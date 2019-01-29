@@ -1,5 +1,7 @@
+i3/config
+vim/.netrwhist
+vim/undo/
+
 .idea/
 __pycache__/
 
-i3/config
-vim/.netrwhist
