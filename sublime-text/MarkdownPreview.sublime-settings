@@ -1,6 +1,0 @@
-{
-    "parser": "github",
-    "enable_mathjax": true,
-    "enable_autoreload": true,
-    "css": ["default"]
-}

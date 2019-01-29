@@ -1,7 +1,7 @@
 {
 	"always_show_minimap_viewport": true,
 	"auto_find_in_selection": false,
-	"color_scheme": "Packages/Base16 Color Schemes/Themes/base16-tomorrow-night.tmTheme",
+	"color_scheme": "Packages/User/base16-ashes-grubersjoe.tmTheme",
 	"dictionary": "Packages/User/Spelling/de_DE.dic",
 	"draw_indent_guides": true,
 	"ensure_newline_at_eof_on_save": true,
@@ -42,7 +42,7 @@
 	"open_files_in_new_window": false,
 	"rulers":
 	[
-		80
+		120
 	],
 	"show_encoding": true,
 	"show_line_endings": true,
