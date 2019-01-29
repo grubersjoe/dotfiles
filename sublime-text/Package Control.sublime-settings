@@ -1,0 +1,15 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Base16 Color Schemes",
+		"Emmet",
+		"LaTeXing",
+		"Package Control",
+		"TypeScript",
+		"TypeScript Syntax"
+	]
+}

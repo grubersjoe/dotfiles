@@ -1,0 +1,4 @@
+[
+	{"keys": ["alt+space"],	"command": "shell_command"},
+    { "keys": ["ctrl+s"], "command": "save_all" }
+]
