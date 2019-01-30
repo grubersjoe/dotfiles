@@ -1,0 +1,19 @@
+QTabBar,
+QTabBar:tab {
+    background-color: #222339;
+}
+
+QTabBar::tab {
+    color: #f1eff8;
+    padding: 0.5em 1em;
+    text-transform: uppercase;
+}
+
+QTabBar::tab:selected {
+    color: #ACACD7;
+}
+
+QTabWidget::pane,
+QTabWidget::tab-bar {
+    background-color: #222339;
+}
