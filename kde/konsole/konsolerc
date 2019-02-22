@@ -1,0 +1,31 @@
+[Desktop Entry]
+DefaultProfile=Profil.profile
+
+[Favorite Profiles]
+Favorites=Profil.profile
+
+[FileDialogSize]
+Height 1080=638
+Width 1920=797
+
+[KFileDialog Settings]
+Recent Files[$e]=tabs.css,file:$HOME/.dotfiles/kde/konsole/tabs.css
+Recent URLs[$e]=file:$HOME/.dotfiles/kde/konsole/
+
+[KonsoleWindow]
+ShowMenuBarByDefault=false
+ShowWindowTitleOnTitleBar=true
+
+[MainWindow]
+Height 1080=830
+MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAAAAB4AAAAP5AAAABAAAAAQAAAAIAAAACPwAAAAA
+ToolBarsMovable=Disabled
+Width 1920=1290
+Window-Maximized 1080x1920=true
+
+[TabBar]
+NewTabBehavior=PutNewTabAfterCurrentTab
+TabBarPosition=Top
+TabBarUseUserStyleSheet=true
+TabBarUserStyleSheetFile=file:///home/jogu/.dotfiles/kde/konsole/tabs.css
