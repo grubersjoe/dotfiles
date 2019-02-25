@@ -6,7 +6,6 @@
   "breadcrumbs.enabled": false,
   "breadcrumbs.symbolPath": "off",
   "diffEditor.ignoreTrimWhitespace": false,
-  "editor.cursorSmoothCaretAnimation": true,
   "editor.dragAndDrop": false,
   "editor.fontFamily": "Fira Code, 'monospace', monospace, 'Droid Sans Fallback'",
   "editor.fontLigatures": true,
