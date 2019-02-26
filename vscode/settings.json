@@ -1,8 +1,4 @@
 {
-  "auto-rename-tag.activationOnLanguage": [
-    "javascriptreact",
-    "typescriptreact"
-  ],
   "breadcrumbs.enabled": false,
   "breadcrumbs.symbolPath": "off",
   "diffEditor.ignoreTrimWhitespace": false,
@@ -15,6 +11,7 @@
   "editor.renderControlCharacters": false,
   "editor.renderWhitespace": "none",
   "editor.rulers": [
+    80,
     120
   ],
   "editor.smoothScrolling": true,
@@ -141,6 +138,12 @@
   },
   "editor.wordWrap": "wordWrapColumn",
   "editor.wordWrapColumn": 120,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
   "files.associations": {
     "*.js": "javascriptreact"
   },
@@ -163,9 +166,7 @@
   "latex-workshop.chktex.enabled": true,
   "latex-workshop.intellisense.citation.label": "title",
   "latex-workshop.intellisense.package.enabled": true,
-  "latex-workshop.latex.autoBuild.onSave.enabled": false,
-  "materialTheme.accent": "Teal",
-  "materialTheme.autoApplyIcons": false,
+  "latex-workshop.latex.autoBuild.run": "never",
   "search.smartCase": true,
   "terminal.external.linuxExec": "konsole",
   "todohighlight.defaultStyle": {
