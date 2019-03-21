@@ -1,7 +1,8 @@
 {
   "breadcrumbs.enabled": false,
   "breadcrumbs.symbolPath": "off",
-  "diffEditor.ignoreTrimWhitespace": false,
+  "diffEditor.ignoreTrimWhitespace": true,
+  "diffEditor.renderSideBySide": true,
   "editor.dragAndDrop": false,
   "editor.fontFamily": "Fira Code, 'monospace', monospace, 'Droid Sans Fallback'",
   "editor.fontLigatures": true,
@@ -11,8 +12,7 @@
   "editor.renderControlCharacters": false,
   "editor.renderWhitespace": "none",
   "editor.rulers": [
-    80,
-    120
+    100
   ],
   "editor.smoothScrolling": true,
   "editor.tabCompletion": "on",
@@ -137,7 +137,8 @@
     ]
   },
   "editor.wordWrap": "wordWrapColumn",
-  "editor.wordWrapColumn": 120,
+  "editor.wordWrapColumn": 100,
+  "eslint.packageManager": "yarn",
   "eslint.validate": [
     "javascript",
     "javascriptreact",
@@ -162,6 +163,14 @@
   },
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/__coverage__/**": true,
+    "**/node_modules/**": true
+  },
+  "flow.pathToFlow": "${workspaceFolder}/node_modules/.bin/flow",
+  "flow.useBundledFlow": false,
   "javascript.preferences.quoteStyle": "single",
   "latex-workshop.chktex.enabled": true,
   "latex-workshop.intellisense.citation.label": "title",
@@ -170,24 +179,40 @@
   "search.smartCase": true,
   "terminal.external.linuxExec": "konsole",
   "todohighlight.defaultStyle": {
-    "borderRadius": "2px",
     "color": "black"
   },
+  "todohighlight.exclude": [
+    "**/node_modules/**",
+    "**/dist/**",
+    "**/build/**",
+    "**/.vscode/**",
+    "**/.github/**",
+    "**/_output/**",
+    "**/*.min.*",
+    "**/*.map",
+    "**/.next/**",
+    "**/__coverage__/**"
+  ],
   "todohighlight.keywords": [
     {
-      "backgroundColor": "#e53935",
+      "backgroundColor": "transparent",
+      "color": "#e53935",
       "text": "FIXME"
     },
     {
-      "backgroundColor": "#fbc02d",
+      "backgroundColor": "transparent",
+      "color": "#fbc02d",
       "text": "TODO"
     },
     {
-      "backgroundColor": "#4caf50",
+      "backgroundColor": "transparent",
+      "color": "#4caf50",
       "text": "REVIEW"
     }
   ],
   "typescript.preferences.quoteStyle": "single",
+  "typescript.suggest.completeJSDocs": false,
+  "typescript.updateImportsOnFileMove.enabled": "always",
   "window.menuBarVisibility": "toggle",
   "window.restoreWindows": "folders",
   "window.titleBarStyle": "native",
@@ -196,6 +221,7 @@
   "workbench.colorTheme": "Material Theme Darker High Contrast",
   "workbench.commandPalette.history": 80,
   "workbench.editor.labelFormat": "short",
+  "workbench.iconTheme": "vs-minimal",
   "workbench.sideBar.location": "left",
   "workbench.startupEditor": "welcomePageInEmptyWorkbench",
   "workbench.statusBar.feedback.visible": false,
