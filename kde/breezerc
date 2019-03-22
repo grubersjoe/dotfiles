@@ -5,4 +5,5 @@ ShadowStrength=64
 
 [Windeco]
 ButtonSize=ButtonSmall
+DrawBackgroundGradient=false
 DrawSizeGrip=false
