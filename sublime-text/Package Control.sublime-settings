@@ -5,9 +5,11 @@
 	],
 	"installed_packages":
 	[
+		"Babel",
 		"Base16 Color Schemes",
 		"ColorPicker",
 		"Emmet",
+		"FileIcons Mono",
 		"LaTeXing",
 		"Package Control",
 		"TypeScript",
