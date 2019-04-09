@@ -7,6 +7,7 @@
   "editor.fontFamily": "Fira Code, 'monospace', monospace, 'Droid Sans Fallback'",
   "editor.fontLigatures": true,
   "editor.fontSize": 13,
+  "editor.gotoLocation.multiple": "goto",
   "editor.minimap.enabled": false,
   "editor.minimap.showSlider": "always",
   "editor.renderControlCharacters": false,
@@ -159,6 +160,7 @@
     ".cache/": true,
     ".idea/": true,
     ".kile/": true,
+    "build/": true,
     "node_modules": true
   },
   "files.insertFinalNewline": true,
