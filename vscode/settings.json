@@ -146,9 +146,6 @@
     "typescript",
     "typescriptreact"
   ],
-  "files.associations": {
-    "*.js": "javascriptreact"
-  },
   "files.exclude": {
     "**/.DS_Store": true,
     "**/.directory": true,
@@ -171,8 +168,6 @@
     "**/__coverage__/**": true,
     "**/node_modules/**": true
   },
-  "flow.pathToFlow": "${workspaceFolder}/node_modules/.bin/flow",
-  "flow.useBundledFlow": false,
   "javascript.preferences.quoteStyle": "single",
   "latex-workshop.chktex.enabled": true,
   "latex-workshop.intellisense.citation.label": "title",
@@ -215,6 +210,8 @@
   "typescript.preferences.quoteStyle": "single",
   "typescript.suggest.completeJSDocs": false,
   "typescript.updateImportsOnFileMove.enabled": "always",
+  "update.enableWindowsBackgroundUpdates": false,
+  "update.mode": "manual",
   "window.menuBarVisibility": "toggle",
   "window.restoreWindows": "folders",
   "window.titleBarStyle": "native",
