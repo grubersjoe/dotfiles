@@ -169,7 +169,6 @@
     "**/node_modules/**": true
   },
   "javascript.preferences.quoteStyle": "single",
-  "latex-workshop.chktex.enabled": true,
   "latex-workshop.intellisense.citation.label": "title",
   "latex-workshop.intellisense.package.enabled": true,
   "latex-workshop.latex.autoBuild.run": "never",
@@ -224,5 +223,14 @@
   "workbench.sideBar.location": "left",
   "workbench.startupEditor": "welcomePageInEmptyWorkbench",
   "workbench.statusBar.feedback.visible": false,
-  "workbench.view.alwaysShowHeaderActions": true
+  "workbench.view.alwaysShowHeaderActions": true,
+  "explorer.confirmDragAndDrop": false,
+  "workbench.colorCustomizations": {
+    "[Material Theme Darker High Contrast]": {
+      "list.activeSelectionForeground": "#C3E88D",
+      "list.inactiveSelectionForeground": "#C3E88D",
+      "editor.findMatchBackground": "#61616150"
+    }
+  },
+  "todohighlight.isEnable": true
 }
