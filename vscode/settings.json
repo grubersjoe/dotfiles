@@ -1,4 +1,16 @@
 {
+  "[javascript]": {
+    "editor.formatOnSave": false
+  },
+  "[javascriptreact]": {
+    "editor.formatOnSave": false
+  },
+  "[typescript]": {
+    "editor.formatOnSave": false
+  },
+  "[typescriptreact]": {
+    "editor.formatOnSave": false
+  },
   "breadcrumbs.enabled": false,
   "breadcrumbs.symbolPath": "off",
   "diffEditor.ignoreTrimWhitespace": true,
@@ -7,6 +19,7 @@
   "editor.fontFamily": "Fira Code, 'monospace', monospace, 'Droid Sans Fallback'",
   "editor.fontLigatures": true,
   "editor.fontSize": 13,
+  "editor.formatOnSave": true,
   "editor.gotoLocation.multiple": "goto",
   "editor.minimap.enabled": false,
   "editor.minimap.showSlider": "always",
@@ -139,13 +152,22 @@
   },
   "editor.wordWrap": "wordWrapColumn",
   "editor.wordWrapColumn": 100,
+  "eslint.alwaysShowStatus": true,
+  "eslint.autoFixOnSave": true,
   "eslint.packageManager": "yarn",
   "eslint.validate": [
     "javascript",
     "javascriptreact",
-    "typescript",
-    "typescriptreact"
+    {
+      "autoFix": true,
+      "language": "typescript"
+    },
+    {
+      "autoFix": true,
+      "language": "typescriptreact"
+    }
   ],
+  "explorer.confirmDragAndDrop": false,
   "files.exclude": {
     "**/.DS_Store": true,
     "**/.directory": true,
@@ -157,7 +179,6 @@
     ".cache/": true,
     ".idea/": true,
     ".kile/": true,
-    "build/": true,
     "node_modules": true
   },
   "files.insertFinalNewline": true,
@@ -168,6 +189,8 @@
     "**/__coverage__/**": true,
     "**/node_modules/**": true
   },
+  "flow.pathToFlow": "${workspaceFolder}/node_modules/.bin/flow",
+  "flow.useBundledFlow": false,
   "javascript.preferences.quoteStyle": "single",
   "latex-workshop.intellisense.citation.label": "title",
   "latex-workshop.intellisense.package.enabled": true,
@@ -189,6 +212,7 @@
     "**/.next/**",
     "**/__coverage__/**"
   ],
+  "todohighlight.isEnable": true,
   "todohighlight.keywords": [
     {
       "backgroundColor": "transparent",
@@ -208,6 +232,7 @@
   ],
   "typescript.preferences.quoteStyle": "single",
   "typescript.suggest.completeJSDocs": false,
+  "typescript.tsserver.log": "verbose",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "update.enableWindowsBackgroundUpdates": false,
   "update.mode": "manual",
@@ -216,6 +241,13 @@
   "window.titleBarStyle": "native",
   "window.zoomLevel": 0.5,
   "workbench.activityBar.visible": true,
+  "workbench.colorCustomizations": {
+    "[Material Theme Darker High Contrast]": {
+      "editor.findMatchBackground": "#61616150",
+      "list.activeSelectionForeground": "#C3E88D",
+      "list.inactiveSelectionForeground": "#C3E88D"
+    }
+  },
   "workbench.colorTheme": "Material Theme Darker High Contrast",
   "workbench.commandPalette.history": 80,
   "workbench.editor.labelFormat": "short",
@@ -223,14 +255,5 @@
   "workbench.sideBar.location": "left",
   "workbench.startupEditor": "welcomePageInEmptyWorkbench",
   "workbench.statusBar.feedback.visible": false,
-  "workbench.view.alwaysShowHeaderActions": true,
-  "explorer.confirmDragAndDrop": false,
-  "workbench.colorCustomizations": {
-    "[Material Theme Darker High Contrast]": {
-      "list.activeSelectionForeground": "#C3E88D",
-      "list.inactiveSelectionForeground": "#C3E88D",
-      "editor.findMatchBackground": "#61616150"
-    }
-  },
-  "todohighlight.isEnable": true
+  "workbench.view.alwaysShowHeaderActions": true
 }
