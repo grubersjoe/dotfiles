@@ -9,7 +9,6 @@ antigen theme robbyrussell
 
 antigen apply
 
-# ---
 
 HISTFILE=~/.histfile
 HISTSIZE=4096
@@ -25,21 +24,9 @@ zstyle :compinstall filename '/home/joe/.zshrc'
 autoload -Uz compinit
 compinit
 
-alias sudo='sudo '
-alias dd='dd status=progress'
-alias df='df -h'
-alias diff='colordiff -y --width=$COLUMNS'
-alias ls='ls -h --color --group-directories-first'
-alias ll='ls -l'
-alias la='ll -a'
-alias lsblk='lsblk -o +LABEL'
-alias grep='grep --color=auto'
-alias mkdir='mkdir -pv'
-alias rsync='rsync -avhL --ignore-existing --exclude-from=$HOME/.dotfiles/exclude-list.txt --info=progress2'
-alias sort='LC_COLLATE="C" sort'
-alias open='xdg-open'
+if [ -f ~/.aliases ]; then
+  . ~/.aliases
+fi
 
-alias dcb="docker-compose build"
-alias dcp="docker-compose pull"
-alias dcu="docker-compose up"
-alias dpbu="dcp && dcb && dcu"
+# NVM
+source /usr/share/nvm/init-nvm.sh
