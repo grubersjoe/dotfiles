@@ -1,14 +1,14 @@
 QTabBar,
 QTabBar:tab {
-    background-color: #222339;
-    font-size: 18px;
+    background-color: #1a1b2d;
+    font-size: 20px;
 }
 
 QTabBar::tab {
     color: #f1eff8;
-    margin-left: 16px;
-    margin-right: 10px;
-    font-size: 14px;
+    margin-left: 20px;
+    margin-right: 12px;
+    font-size: 16px;
     text-transform: uppercase;
 }
 
@@ -22,5 +22,5 @@ QTabBar::tab:selected {
 
 QTabWidget::pane,
 QTabWidget::tab-bar {
-    background-color: #222339;
+    background-color: #1a1b2d;
 }
