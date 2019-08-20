@@ -1,25 +1,14 @@
 {
-  "[javascript]": {
-    "editor.formatOnSave": false
-  },
-  "[javascriptreact]": {
-    "editor.formatOnSave": false
-  },
-  "[typescript]": {
-    "editor.formatOnSave": false
-  },
-  "[typescriptreact]": {
-    "editor.formatOnSave": false
-  },
-  "breadcrumbs.enabled": false,
-  "breadcrumbs.symbolPath": "off",
+  "breadcrumbs.enabled": true,
+  "breadcrumbs.symbolPath": "on",
+  "cSpell.language": "de,en",
   "diffEditor.ignoreTrimWhitespace": true,
   "diffEditor.renderSideBySide": true,
   "editor.dragAndDrop": false,
   "editor.fontFamily": "Fira Code, 'monospace', monospace, 'Droid Sans Fallback'",
   "editor.fontLigatures": true,
   "editor.fontSize": 13,
-  "editor.formatOnSave": true,
+  "editor.formatOnSave": false,
   "editor.gotoLocation.multiple": "goto",
   "editor.minimap.enabled": false,
   "editor.minimap.showSlider": "always",
@@ -158,14 +147,8 @@
   "eslint.validate": [
     "javascript",
     "javascriptreact",
-    {
-      "autoFix": true,
-      "language": "typescript"
-    },
-    {
-      "autoFix": true,
-      "language": "typescriptreact"
-    }
+    "typescript",
+    "typescriptreact"
   ],
   "explorer.confirmDragAndDrop": false,
   "files.exclude": {
@@ -192,9 +175,21 @@
   "flow.pathToFlow": "${workspaceFolder}/node_modules/.bin/flow",
   "flow.useBundledFlow": false,
   "javascript.preferences.quoteStyle": "single",
+  "latex-workshop.chktex.enabled": false,
   "latex-workshop.intellisense.citation.label": "title",
   "latex-workshop.intellisense.package.enabled": true,
   "latex-workshop.latex.autoBuild.run": "never",
+  "material-icon-theme.activeIconPack": "react",
+  "material-icon-theme.files.associations": {
+    "*.tex": "document"
+  },
+  "material-icon-theme.folders.theme": "classic",
+  "material-icon-theme.saturation": 0,
+  "printcode.browserPath": "chromium",
+  "printcode.disableTelemetry": true,
+  "printcode.fontSize": 14,
+  "printcode.lineNumbers": "off",
+  "printcode.printFilePath": "none",
   "search.smartCase": true,
   "terminal.external.linuxExec": "konsole",
   "todohighlight.defaultStyle": {
@@ -216,6 +211,11 @@
   "todohighlight.keywords": [
     {
       "backgroundColor": "transparent",
+      "color": "#fbc02d",
+      "text": "CITATION NEEDED"
+    },
+    {
+      "backgroundColor": "transparent",
       "color": "#e53935",
       "text": "FIXME"
     },
@@ -232,9 +232,8 @@
   ],
   "typescript.preferences.quoteStyle": "single",
   "typescript.suggest.completeJSDocs": false,
-  "typescript.tsserver.log": "verbose",
+  "typescript.tsserver.log": "off",
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "update.enableWindowsBackgroundUpdates": false,
   "update.mode": "manual",
   "window.menuBarVisibility": "toggle",
   "window.restoreWindows": "folders",
@@ -251,9 +250,8 @@
   "workbench.colorTheme": "Material Theme Darker High Contrast",
   "workbench.commandPalette.history": 80,
   "workbench.editor.labelFormat": "short",
-  "workbench.iconTheme": "vs-minimal",
+  "workbench.iconTheme": "material-icon-theme",
   "workbench.sideBar.location": "left",
   "workbench.startupEditor": "welcomePageInEmptyWorkbench",
-  "workbench.statusBar.feedback.visible": false,
   "workbench.view.alwaysShowHeaderActions": true
 }
