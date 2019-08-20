@@ -11,6 +11,7 @@ alias mkdir='mkdir -pv'
 alias rsync='rsync -avhL --ignore-existing --exclude-from=$HOME/.dotfiles/exclude-list.txt --info=progress2'
 alias sort='LC_COLLATE="C" sort'
 alias open='xdg-open'
+alias vi='vim'
 
 alias dcb="docker-compose build"
 alias dcp="docker-compose pull"
