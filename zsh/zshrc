@@ -24,9 +24,9 @@ zstyle :compinstall filename '/home/joe/.zshrc'
 autoload -Uz compinit
 compinit
 
+# NVM
+source /usr/share/nvm/init-nvm.sh
+
 if [ -f ~/.aliases ]; then
   . ~/.aliases
 fi
-
-# NVM
-source /usr/share/nvm/init-nvm.sh
