@@ -7,7 +7,7 @@ PATH=${HOME}/.local/bin:$PATH
 export PATH="/usr/local/sbin:$PATH"
 
 # Node
-export PATH="/usr/local/opt/node@8/bin:$PATH"
+export PATH="/usr/local/opt/node@10/bin:$PATH"
 
 # NPM
 NPM_PACKAGES="${HOME}/.npm-packages"
@@ -24,6 +24,9 @@ export PATH="$(brew --prefix qt)/bin:$PATH"
 
 export EDITOR="vim"
 export CLICOLOR=1
+
+# Required for some web projects...
+export PKG_CONFIG_PATH="/usr/local/opt/libffi/lib/pkgconfig"
 
 # Bash completion (Homebrew)
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
