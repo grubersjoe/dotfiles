@@ -25,8 +25,7 @@
 	],
 	"folder_exclude_patterns":
 	[
-		".*",
-		"node_modules"
+		".*"
 	],
 	"font_face": "Fira Code",
 	"font_options":
@@ -40,7 +39,6 @@
 	"ignored_packages":
 	[
 		"ShellCommand",
-		"TypeScript",
 		"Vintage"
 	],
 	"ignored_words":
@@ -62,5 +60,5 @@
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
 	"update_check": false,
-	"wrap_width": 80
+	"wrap_width": 120
 }
