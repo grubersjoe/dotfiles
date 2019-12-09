@@ -1,7 +1,6 @@
 {
   "breadcrumbs.enabled": true,
-  "breadcrumbs.symbolPath": "on",
-  "cSpell.language": "de,en",
+  "breadcrumbs.symbolPath": "off",
   "diffEditor.ignoreTrimWhitespace": true,
   "diffEditor.renderSideBySide": true,
   "editor.dragAndDrop": false,
@@ -184,12 +183,7 @@
     "*.tex": "document"
   },
   "material-icon-theme.folders.theme": "classic",
-  "material-icon-theme.saturation": 0,
-  "printcode.browserPath": "chromium",
-  "printcode.disableTelemetry": true,
-  "printcode.fontSize": 14,
-  "printcode.lineNumbers": "off",
-  "printcode.printFilePath": "none",
+  "material-icon-theme.saturation": 0.5,
   "search.smartCase": true,
   "terminal.external.linuxExec": "konsole",
   "todohighlight.defaultStyle": {
