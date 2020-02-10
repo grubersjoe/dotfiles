@@ -1,3 +1,14 @@
+call plug#begin('~/.vim/plugged')
+
+Plug 'chriskempson/base16-vim'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'preservim/nerdtree'
+Plug 'leafgarland/typescript-vim'
+Plug 'peitalin/vim-jsx-typescript'
+
+call plug#end()
+
 syntax enable
 
 set background=dark 
@@ -22,3 +33,8 @@ imap jk <Esc>
 
 " turn off search hightlight
 nnoremap <leader><space> :nohlsearch<CR>    
+
+colorscheme base16-dracula
+let g:airline_theme='deus'
+
+set noshowmode  " to get rid of thing like --INSERT--
