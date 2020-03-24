@@ -8,7 +8,8 @@
   "editor.fontLigatures": true,
   "editor.fontSize": 13,
   "editor.formatOnSave": false,
-  "editor.gotoLocation.multiple": "goto",
+  "editor.gotoLocation.multipleDeclarations": "goto",
+  "editor.gotoLocation.multipleDefinitions": "goto",
   "editor.minimap.enabled": false,
   "editor.minimap.showSlider": "always",
   "editor.renderControlCharacters": false,
@@ -141,7 +142,6 @@
   "editor.wordWrap": "wordWrapColumn",
   "editor.wordWrapColumn": 100,
   "eslint.alwaysShowStatus": true,
-  "eslint.autoFixOnSave": true,
   "eslint.packageManager": "yarn",
   "eslint.validate": [
     "javascript",
@@ -178,12 +178,12 @@
   "latex-workshop.intellisense.citation.label": "title",
   "latex-workshop.intellisense.package.enabled": true,
   "latex-workshop.latex.autoBuild.run": "never",
-  "material-icon-theme.activeIconPack": "react",
+  "material-icon-theme.activeIconPack": "react_redux",
   "material-icon-theme.files.associations": {
     "*.tex": "document"
   },
   "material-icon-theme.folders.theme": "classic",
-  "material-icon-theme.saturation": 0.5,
+  "material-icon-theme.saturation": 0,
   "search.smartCase": true,
   "terminal.external.linuxExec": "konsole",
   "todohighlight.defaultStyle": {
