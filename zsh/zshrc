@@ -4,8 +4,9 @@ antigen use oh-my-zsh
 
 antigen bundle git
 antigen bundle yarn
+antigen bundle zsh-users/zsh-autosuggestions
 
-antigen theme robbyrussell
+antigen theme https://github.com/grubersjoe/dotfiles.git zsh/theme
 
 antigen apply
 
@@ -23,9 +24,6 @@ bindkey '^R' history-incremental-search-backward
 zstyle :compinstall filename '/home/joe/.zshrc'
 autoload -Uz compinit
 compinit
-
-# NVM
-source /usr/share/nvm/init-nvm.sh
 
 if [ -f ~/.aliases ]; then
   . ~/.aliases

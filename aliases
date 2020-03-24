@@ -17,3 +17,5 @@ alias dcb="docker-compose build"
 alias dcp="docker-compose pull"
 alias dcu="docker-compose up"
 alias dpbu="dcp && dcb && dcu"
+
+alias php="php72"

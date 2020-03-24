@@ -1,21 +1,17 @@
 QTabBar,
-QTabBar:tab {
+QTabBar::tab {
     background-color: #181928;
     font-family: "Roboto", sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     text-transform: uppercase;
 }
 
 QTabBar::tab {
     color: #ddd;
-    margin-left: 4em;
-    padding: 0.5em 0.25em 0.5em 0;
-    font-size: 18px;
-}
-
-QTabBar::tab::first-of-type {
-    margin-left: 0.5em;
+    margin-right: 0.5em;
+    padding: 0.25em 0;
+    font-size: 16px;
 }
 
 QTabBar::tab:selected {
