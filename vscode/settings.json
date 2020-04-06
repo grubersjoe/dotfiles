@@ -7,8 +7,8 @@
   "editor.fontFamily": "Fira Code, 'monospace', monospace, 'Droid Sans Fallback'",
   "editor.fontLigatures": true,
   "editor.fontSize": 13,
-  "editor.formatOnSave": false,
-  "editor.gotoLocation.multiple": "goto",
+  "editor.formatOnSave": true,
+  "editor.gotoLocation.multipleDefinitions": "goto",
   "editor.minimap.enabled": false,
   "editor.minimap.showSlider": "always",
   "editor.renderControlCharacters": false,
@@ -62,22 +62,6 @@
           "keyword.operator.arithmetic",
           "keyword.operator.logical",
           "keyword.other",
-          "markup",
-          "markup.bold",
-          "markup.changed",
-          "markup.deleted",
-          "markup.heading",
-          "markup.inline.raw",
-          "markup.inserted",
-          "markup.italic",
-          "markup.list",
-          "markup.list.numbered",
-          "markup.list.unnumbered",
-          "markup.other",
-          "markup.quote",
-          "markup.raw",
-          "markup.underline",
-          "markup.underline.link",
           "meta",
           "meta.block",
           "meta.cast",
@@ -141,7 +125,6 @@
   "editor.wordWrap": "wordWrapColumn",
   "editor.wordWrapColumn": 100,
   "eslint.alwaysShowStatus": true,
-  "eslint.autoFixOnSave": true,
   "eslint.packageManager": "yarn",
   "eslint.validate": [
     "javascript",
@@ -186,6 +169,7 @@
   "material-icon-theme.saturation": 0.5,
   "search.smartCase": true,
   "terminal.external.linuxExec": "konsole",
+  "terminal.integrated.fontSize": 13,
   "todohighlight.defaultStyle": {
     "color": "black"
   },
@@ -206,7 +190,7 @@
     {
       "backgroundColor": "transparent",
       "color": "#fbc02d",
-      "text": "CITATION NEEDED"
+      "text": "FEEDBACK"
     },
     {
       "backgroundColor": "transparent",
@@ -232,20 +216,17 @@
   "window.menuBarVisibility": "toggle",
   "window.restoreWindows": "folders",
   "window.titleBarStyle": "native",
-  "window.zoomLevel": 0.5,
+  "window.zoomLevel": 1.5,
   "workbench.activityBar.visible": true,
-  "workbench.colorCustomizations": {
-    "[Material Theme Darker High Contrast]": {
-      "editor.findMatchBackground": "#61616150",
-      "list.activeSelectionForeground": "#C3E88D",
-      "list.inactiveSelectionForeground": "#C3E88D"
-    }
-  },
-  "workbench.colorTheme": "Material Theme Darker High Contrast",
+  "workbench.colorTheme": "Community Material Theme Darker High Contrast",
   "workbench.commandPalette.history": 80,
   "workbench.editor.labelFormat": "short",
-  "workbench.iconTheme": "material-icon-theme",
+  // "workbench.iconTheme": "material-icon-theme",
   "workbench.sideBar.location": "left",
   "workbench.startupEditor": "welcomePageInEmptyWorkbench",
-  "workbench.view.alwaysShowHeaderActions": true
+  "workbench.view.alwaysShowHeaderActions": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
 }
