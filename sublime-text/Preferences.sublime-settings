@@ -1,11 +1,4 @@
 {
-	"added_words":
-	[
-		"Transpilierung",
-		"Overflow",
-		"Community",
-		"Traversierung"
-	],
 	"always_show_minimap_viewport": true,
 	"auto_find_in_selection": false,
 	"color_scheme": "Packages/Base16 Color Schemes/Themes/base16-material-darker.tmTheme",
@@ -27,13 +20,13 @@
 	[
 		".*"
 	],
-	"font_face": "Fira Code",
+	"font_face": "Jetbrains Mono",
 	"font_options":
 	[
 		"dlig",
 		"gray_antialias"
 	],
-	"font_size": 11,
+	"font_size": 12,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"ignored_packages":

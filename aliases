@@ -15,6 +15,7 @@ alias vi='vim'
 
 alias dcb="docker-compose build"
 alias dcp="docker-compose pull"
+alias dcd="docker-compose down"
 alias dcu="docker-compose up"
 alias dpbu="dcp && dcb && dcu"
 

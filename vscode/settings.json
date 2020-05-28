@@ -4,10 +4,10 @@
   "diffEditor.ignoreTrimWhitespace": true,
   "diffEditor.renderSideBySide": true,
   "editor.dragAndDrop": false,
-  "editor.fontFamily": "Fira Code, 'monospace', monospace, 'Droid Sans Fallback'",
+  "editor.fontFamily": "Jetbrains Mono, 'monospace', monospace, 'Droid Sans Fallback'",
   "editor.fontLigatures": true,
-  "editor.fontSize": 13,
-  "editor.formatOnSave": false,
+  "editor.fontSize": 14,
+  "editor.formatOnSave": true,
   "editor.gotoLocation.multipleDeclarations": "goto",
   "editor.gotoLocation.multipleDefinitions": "goto",
   "editor.minimap.enabled": false,
@@ -247,5 +247,6 @@
   "workbench.iconTheme": "material-icon-theme",
   "workbench.sideBar.location": "left",
   "workbench.startupEditor": "welcomePageInEmptyWorkbench",
-  "workbench.view.alwaysShowHeaderActions": true
+  "workbench.view.alwaysShowHeaderActions": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
 }
