@@ -14,9 +14,7 @@
   "editor.minimap.showSlider": "always",
   "editor.renderControlCharacters": false,
   "editor.renderWhitespace": "none",
-  "editor.rulers": [
-    100
-  ],
+  "editor.rulers": [100],
   "editor.smoothScrolling": true,
   "editor.tabCompletion": "on",
   "editor.tabSize": 2,
@@ -63,22 +61,6 @@
           "keyword.operator.arithmetic",
           "keyword.operator.logical",
           "keyword.other",
-          "markup",
-          "markup.bold",
-          "markup.changed",
-          "markup.deleted",
-          "markup.heading",
-          "markup.inline.raw",
-          "markup.inserted",
-          "markup.italic",
-          "markup.list",
-          "markup.list.numbered",
-          "markup.list.unnumbered",
-          "markup.other",
-          "markup.quote",
-          "markup.raw",
-          "markup.underline",
-          "markup.underline.link",
           "meta",
           "meta.block",
           "meta.cast",
@@ -130,9 +112,7 @@
         }
       },
       {
-        "scope": [
-          "entity.name.section"
-        ],
+        "scope": ["entity.name.section"],
         "settings": {
           "fontStyle": "bold underline"
         }
@@ -178,14 +158,15 @@
   "latex-workshop.intellisense.citation.label": "title",
   "latex-workshop.intellisense.package.enabled": true,
   "latex-workshop.latex.autoBuild.run": "never",
-  "material-icon-theme.activeIconPack": "react_redux",
+  "material-icon-theme.activeIconPack": "react",
   "material-icon-theme.files.associations": {
     "*.tex": "document"
   },
   "material-icon-theme.folders.theme": "classic",
-  "material-icon-theme.saturation": 0,
+  "material-icon-theme.saturation": 0.5,
   "search.smartCase": true,
   "terminal.external.linuxExec": "konsole",
+  "terminal.integrated.fontSize": 13,
   "todohighlight.defaultStyle": {
     "color": "black"
   },
@@ -206,7 +187,7 @@
     {
       "backgroundColor": "transparent",
       "color": "#fbc02d",
-      "text": "CITATION NEEDED"
+      "text": "FEEDBACK"
     },
     {
       "backgroundColor": "transparent",
@@ -244,7 +225,6 @@
   "workbench.colorTheme": "Material Theme Darker High Contrast",
   "workbench.commandPalette.history": 80,
   "workbench.editor.labelFormat": "short",
-  "workbench.iconTheme": "material-icon-theme",
   "workbench.sideBar.location": "left",
   "workbench.startupEditor": "welcomePageInEmptyWorkbench",
   "workbench.view.alwaysShowHeaderActions": true,

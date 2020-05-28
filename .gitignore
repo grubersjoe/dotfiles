@@ -1,6 +1,7 @@
 i3/config
 vim/.netrwhist
-vim/undo/
+vim/plugged/
+vim/undo
 
 .idea/
 __pycache__/
