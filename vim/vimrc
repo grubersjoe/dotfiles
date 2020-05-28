@@ -34,7 +34,7 @@ imap jk <Esc>
 " turn off search hightlight
 nnoremap <leader><space> :nohlsearch<CR>    
 
-colorscheme base16-dracula
+" colorscheme base16-dracula
 let g:airline_theme='deus'
 
 set noshowmode  " to get rid of thing like --INSERT--
