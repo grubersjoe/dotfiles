@@ -1,3 +1,2 @@
-prefix=${HOME}/.npm-packages
 scope=grubersjoe
 @grubersjoe:registry=https://registry.npmjs.org/
