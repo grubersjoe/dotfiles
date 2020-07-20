@@ -23,8 +23,7 @@
 	"font_face": "Jetbrains Mono",
 	"font_options":
 	[
-		"dlig",
-		"gray_antialias"
+		"dlig"
 	],
 	"font_size": 12,
 	"highlight_line": true,
@@ -44,7 +43,7 @@
 	"open_files_in_new_window": false,
 	"rulers":
 	[
-		100
+		120
 	],
 	"show_encoding": true,
 	"show_line_endings": true,
