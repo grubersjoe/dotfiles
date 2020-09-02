@@ -25,8 +25,13 @@
 [push]
 	default = current
 
+[pull]
+	rebase = true
+
+[rebase]
+	autoStash = true
+
 [user]
     name = Jonathan Gruber
     email = gruberjonathan@gmail.com
-[pull]
-	rebase = true
+
