@@ -39,7 +39,7 @@
 		"Commits"
 	],
 	"line_numbers": true,
-	"line_padding_bottom": 1,
+	"line_padding_bottom": 3,
 	"open_files_in_new_window": false,
 	"rulers":
 	[
@@ -52,5 +52,5 @@
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
 	"update_check": false,
-	"wrap_width": 120
+	"wrap_width": 100
 }
