@@ -3,6 +3,10 @@
   "breadcrumbs.symbolPath": "off",
   "diffEditor.ignoreTrimWhitespace": true,
   "diffEditor.renderSideBySide": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.dragAndDrop": false,
   "editor.fontFamily": "Jetbrains Mono, 'monospace', monospace, 'Droid Sans Fallback'",
   "editor.fontLigatures": true,
@@ -14,7 +18,9 @@
   "editor.minimap.showSlider": "always",
   "editor.renderControlCharacters": false,
   "editor.renderWhitespace": "none",
-  "editor.rulers": [100],
+  "editor.rulers": [
+    100
+  ],
   "editor.smoothScrolling": true,
   "editor.tabCompletion": "on",
   "editor.tabSize": 2,
@@ -112,7 +118,9 @@
         }
       },
       {
-        "scope": ["entity.name.section"],
+        "scope": [
+          "entity.name.section"
+        ],
         "settings": {
           "fontStyle": "bold underline"
         }
@@ -213,20 +221,12 @@
   "window.menuBarVisibility": "toggle",
   "window.restoreWindows": "folders",
   "window.titleBarStyle": "native",
-  "window.zoomLevel": 0.5,
+  "window.zoomLevel": 1.5,
   "workbench.activityBar.visible": true,
-  "workbench.colorCustomizations": {
-    "[Material Theme Darker High Contrast]": {
-      "editor.findMatchBackground": "#61616150",
-      "list.activeSelectionForeground": "#C3E88D",
-      "list.inactiveSelectionForeground": "#C3E88D"
-    }
-  },
-  "workbench.colorTheme": "Material Theme Darker High Contrast",
+  "workbench.colorTheme": "Community Material Theme Darker High Contrast",
   "workbench.commandPalette.history": 80,
   "workbench.editor.labelFormat": "short",
   "workbench.sideBar.location": "left",
   "workbench.startupEditor": "welcomePageInEmptyWorkbench",
-  "workbench.view.alwaysShowHeaderActions": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "workbench.view.alwaysShowHeaderActions": true
 }
