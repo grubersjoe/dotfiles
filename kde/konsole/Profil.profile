@@ -2,8 +2,8 @@
 AntiAliasFonts=true
 BoldIntense=false
 ColorScheme=base16-joe
-Font=Fira Code,11,-1,5,50,0,0,0,0,0
-LineSpacing=0
+Font=JetBrains Mono,11,-1,5,50,0,0,0,0,0
+LineSpacing=1
 UseFontLineChararacters=true
 
 [Cursor Options]

@@ -22,6 +22,8 @@ bindkey '^R' history-incremental-search-backward
 
 # Completion system
 zstyle :compinstall filename '/home/joe/.zshrc'
+zstyle ':completion:*' list-dirs-first true
+
 autoload -Uz compinit
 compinit
 

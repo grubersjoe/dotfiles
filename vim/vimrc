@@ -6,6 +6,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'preservim/nerdtree'
 Plug 'leafgarland/typescript-vim'
 Plug 'peitalin/vim-jsx-typescript'
+Plug 'chrisbra/vim-autosave'
 
 call plug#end()
 
@@ -15,6 +16,7 @@ set background=dark
 set backspace=indent,eol,start      " improved backspace
 set encoding=utf-8                  " always use UTF-8
 set expandtab                       " expand tabs to spaces
+set fillchars=vert:│                " vertical fill char
 set incsearch                       " incremental search
 set ignorecase                      " case insensitive search
 set scrolloff=4                     " scroll offset
@@ -38,3 +40,11 @@ nnoremap <leader><space> :nohlsearch<CR>
 let g:airline_theme='deus'
 
 set noshowmode  " to get rid of thing like --INSERT--
+
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-h> <C-W>h
+map <C-l> <C-W>l
+
+" No background for vertical fill char
+highlight VertSplit cterm=NONE
