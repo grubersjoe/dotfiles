@@ -149,6 +149,7 @@
     ".cache/": true,
     ".idea/": true,
     ".kile/": true,
+    "dist": true,
     "node_modules": true
   },
   "files.insertFinalNewline": true,
@@ -221,12 +222,15 @@
   "window.menuBarVisibility": "toggle",
   "window.restoreWindows": "folders",
   "window.titleBarStyle": "native",
-  "window.zoomLevel": 1.5,
+  "window.zoomLevel": 0.75,
   "workbench.activityBar.visible": true,
   "workbench.colorTheme": "Community Material Theme Darker High Contrast",
   "workbench.commandPalette.history": 80,
+  "workbench.editor.enablePreview": false,
   "workbench.editor.labelFormat": "short",
   "workbench.sideBar.location": "left",
   "workbench.startupEditor": "welcomePageInEmptyWorkbench",
+  "workbench.tree.indent": 12,
+  "workbench.tree.renderIndentGuides": "always",
   "workbench.view.alwaysShowHeaderActions": true
 }
