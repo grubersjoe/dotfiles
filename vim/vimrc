@@ -19,6 +19,7 @@ set expandtab                       " expand tabs to spaces
 set fillchars=vert:│                " vertical fill char
 set incsearch                       " incremental search
 set ignorecase                      " case insensitive search
+set paste                           " use paste mode instead of auto-format
 set scrolloff=4                     " scroll offset
 set showcmd                         " show last command
 set shiftwidth=4                    " shift width (indent)
