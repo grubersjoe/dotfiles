@@ -1,20 +1,23 @@
 {
   "breadcrumbs.enabled": true,
   "breadcrumbs.symbolPath": "off",
-  "diffEditor.ignoreTrimWhitespace": true,
+  "diffEditor.ignoreTrimWhitespace": false,
   "diffEditor.renderSideBySide": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.dragAndDrop": false,
-  "editor.fontFamily": "Jetbrains Mono, 'monospace', monospace, 'Droid Sans Fallback'",
+  "editor.fontFamily": "'Jetbrains Mono', 'monospace'",
   "editor.fontLigatures": true,
   "editor.fontSize": 14,
   "editor.formatOnSave": true,
   "editor.gotoLocation.multipleDeclarations": "goto",
   "editor.gotoLocation.multipleDefinitions": "goto",
-  "editor.minimap.enabled": false,
+  "editor.gotoLocation.multipleImplementations": "goto",
+  "editor.gotoLocation.multipleReferences": "goto",
+  "editor.gotoLocation.multipleTypeDefinitions": "goto",
+  "editor.minimap.enabled": true,
   "editor.minimap.showSlider": "always",
   "editor.renderControlCharacters": false,
   "editor.renderWhitespace": "none",
@@ -138,6 +141,7 @@
     "typescriptreact"
   ],
   "explorer.confirmDragAndDrop": false,
+  "extensions.ignoreRecommendations": false,
   "files.exclude": {
     "**/.DS_Store": true,
     "**/.directory": true,
@@ -145,12 +149,12 @@
     "**/.hg": true,
     "**/.svn": true,
     "**/CVS": true,
+    "**/node_modules/": true,
     "*.kilepr": true,
     ".cache/": true,
     ".idea/": true,
     ".kile/": true,
-    "dist": true,
-    "node_modules": true
+    "dist": true
   },
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
@@ -162,11 +166,18 @@
   },
   "flow.pathToFlow": "${workspaceFolder}/node_modules/.bin/flow",
   "flow.useBundledFlow": false,
+  "javascript.implicitProjectConfig.checkJs": true,
   "javascript.preferences.quoteStyle": "single",
+  "javascript.updateImportsOnFileMove.enabled": "always",
   "latex-workshop.chktex.enabled": false,
   "latex-workshop.intellisense.citation.label": "title",
   "latex-workshop.intellisense.package.enabled": true,
   "latex-workshop.latex.autoBuild.run": "never",
+  "markdown.marp.chromePath": "chromium",
+  "markdown.marp.enableHtml": true,
+  "markdown.marp.toolbarButtonForQuickPick": false,
+  "markdown.preview.scrollEditorWithPreview": false,
+  "markdown.preview.scrollPreviewWithEditor": false,
   "material-icon-theme.activeIconPack": "react",
   "material-icon-theme.files.associations": {
     "*.tex": "document"
@@ -230,7 +241,7 @@
   "workbench.editor.labelFormat": "short",
   "workbench.sideBar.location": "left",
   "workbench.startupEditor": "welcomePageInEmptyWorkbench",
-  "workbench.tree.indent": 12,
+  "workbench.tree.indent": 16,
   "workbench.tree.renderIndentGuides": "always",
   "workbench.view.alwaysShowHeaderActions": true
 }
