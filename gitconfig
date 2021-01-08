@@ -17,6 +17,7 @@
 	helper = cache
 
 [diff]
+	algorithm = patience
 	tool = meld
 
 [difftool "diffpdf"]

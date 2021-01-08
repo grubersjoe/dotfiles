@@ -1,25 +1,25 @@
 QTabBar,
 QTabBar::tab {
-  background-color: #181928;
+  background-color: #100b16;
   font-family: "Jetbrains Mono", sans-serif;
   font-size: 16px;
-  text-transform: uppercase;
+  letter-spacing: -0.5px;
 }
 
 QTabBar::tab {
   color: #ddd;
-  margin-right: 1.25em;
+  margin-left: 10px;
+  margin-right: 16px;
   padding: 0.25em 0;
-  border-top: 1px solid transparent;
 }
 
 QTabBar::tab:selected {
-  border-top: 1px solid #eee;
+  color: #9f9fef;
 }
 
 QTabWidget::pane,
 QTabWidget::tab-bar {
-  background-color: #222339;
+  background-color: #100b16;
 }
 
 
