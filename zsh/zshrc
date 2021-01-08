@@ -10,7 +10,6 @@ antigen theme https://github.com/grubersjoe/dotfiles.git zsh/theme
 
 antigen apply
 
-
 HISTFILE=~/.histfile
 HISTSIZE=4096
 SAVEHIST=4096
@@ -30,3 +29,5 @@ compinit
 if [ -f ~/.aliases ]; then
   . ~/.aliases
 fi
+
+source <(kubectl completion zsh)

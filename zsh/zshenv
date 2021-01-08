@@ -1,11 +1,11 @@
 # ~/.zshenv
 
-export EDITOR="vim"
-export VISUAL="vim"
-export TERMINAL="konsole"
+export EDITOR=vim
+export VISUAL=vim
+export TERMINAL=konsole
 
 # SSH
-export SSH_ASKPASS="/usr/bin/ksshaskpass"
+export SSH_ASKPASS=/usr/bin/ksshaskpass
 
 # Local programs
 PATH=${HOME}/.local/bin:$PATH
@@ -15,3 +15,7 @@ source /usr/share/nvm/init-nvm.sh
 
 # Ruby Gems
 PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
+
+# ---
+
+export APP_ENV=dev
