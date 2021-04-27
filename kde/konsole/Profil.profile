@@ -1,7 +1,7 @@
 [Appearance]
 AntiAliasFonts=true
 BoldIntense=false
-ColorScheme=base16-joe
+ColorScheme=Breeze
 Font=JetBrains Mono,11,-1,5,50,0,0,0,0,0
 LineSpacing=1
 UseFontLineChararacters=true
