@@ -14,25 +14,26 @@
     excludesfile = ~/.gitignore
 
 [credential]
-	helper = cache
+    helper = cache
 
 [diff]
-	algorithm = patience
-	tool = meld
+    tool = meld
 
 [difftool "diffpdf"]
     cmd = diffpdf "$LOCAL" "$REMOTE"
 
+[init]
+    defaultBranch = main
+
 [push]
-	default = current
+    default = current
 
 [pull]
-	rebase = true
+    rebase = true
 
 [rebase]
-	autoStash = true
+    autoStash = true
 
 [user]
     name = Jonathan Gruber
     email = gruberjonathan@gmail.com
-

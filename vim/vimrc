@@ -1,6 +1,5 @@
 call plug#begin('~/.vim/plugged')
 
-Plug 'chriskempson/base16-vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'preservim/nerdtree'
@@ -37,8 +36,9 @@ imap jk <Esc>
 " turn off search hightlight
 nnoremap <leader><space> :nohlsearch<CR>    
 
-" colorscheme base16-dracula
+" Airline
 let g:airline_theme='deus'
+let g:airline_powerline_fonts = 1
 
 set noshowmode  " to get rid of thing like --INSERT--
 
@@ -49,3 +49,5 @@ map <C-l> <C-W>l
 
 " No background for vertical fill char
 highlight VertSplit cterm=NONE
+
+
