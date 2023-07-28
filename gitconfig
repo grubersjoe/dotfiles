@@ -27,6 +27,7 @@
 
 [push]
     default = current
+	autoSetupRemote = true
 
 [pull]
     rebase = true
@@ -36,4 +37,4 @@
 
 [user]
     name = Jonathan Gruber
-    email = gruberjonathan@gmail.com
+    email = jonathan.gruber@spreadgroup.com

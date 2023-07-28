@@ -1,0 +1,12 @@
+Log 
+# Bitte geben Sie eine Commit-Beschreibung für Ihre Änderungen ein. Zeilen,
+# die mit '#' beginnen, werden ignoriert, und eine leere Beschreibung
+# bricht den Commit ab.
+#
+# Auf Branch deprecation-logs
+# Zum Commit vorgemerkte Änderungen:
+#	geändert:       config/packages/monolog.yaml
+#
+# Änderungen, die nicht zum Commit vorgemerkt sind:
+#	geändert:       docker-compose.yml
+#

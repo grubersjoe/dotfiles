@@ -1,0 +1,11 @@
+TES-14569: Fix error reporting of bulk command
+
+$? reads the return code of the *last* command. So inserting the restore-user-products command line  has been inserted this represents the status code of this command and not the one of the import command.
+# Bitte geben Sie eine Commit-Beschreibung für Ihre Änderungen ein. Zeilen,
+# die mit '#' beginnen, werden ignoriert, und eine leere Beschreibung
+# bricht den Commit ab.
+#
+# Auf Branch TES-14569
+# Zum Commit vorgemerkte Änderungen:
+#	geändert:       scripts/cron_import_bulk.sh
+#
