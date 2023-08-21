@@ -1,17 +1,10 @@
-# ~/.zshenv
+export EDITOR=nvim
 
-export EDITOR="vim"
-export VISUAL="vim"
-export TERMINAL="konsole"
+export GOPATH=$HOME/.go
+export GOROOT="/opt/homebrew/opt/go/libexec"
+export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
 
-# SSH
-export SSH_ASKPASS="/usr/bin/ksshaskpass"
+export PATH="/opt/homebrew/opt/node@18/bin:$PATH"
 
-# Local programs
-PATH=${HOME}/.local/bin:$PATH
-
-# NVM
-source /usr/share/nvm/init-nvm.sh
-
-# Ruby Gems
-PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
+# Own programs
+export PATH=$HOME/.local/bin:$PATH

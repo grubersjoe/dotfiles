@@ -16,12 +16,6 @@
 [credential]
     helper = cache
 
-[diff]
-    tool = meld
-
-[difftool "diffpdf"]
-    cmd = diffpdf "$LOCAL" "$REMOTE"
-
 [init]
     defaultBranch = main
 
@@ -37,4 +31,4 @@
 
 [user]
     name = Jonathan Gruber
-    email = jonathan.gruber@spreadgroup.com
+    email = gruberjonathan@gmail.com

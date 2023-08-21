@@ -6,6 +6,8 @@ alias ll='ls -l'
 alias la='ll -a'
 alias grep='grep --color=auto'
 alias mkdir='mkdir -pv'
+alias rsync='rsync -avhL --ignore-existing --exclude-from=$HOME/.dotfiles/exclude-list.txt --info=progress2'
+alias vi='vim'
 alias vim='nvim'
 
 alias dcd="docker compose down"

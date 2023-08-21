@@ -1,7 +1,4 @@
-i3/config
-vim/.netrwhist
-vim/plugged/
-vim/undo
+linux/i3/config
 
 .idea/
 .DS_Store

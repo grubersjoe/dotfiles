@@ -5,7 +5,6 @@ source /opt/homebrew/share/antigen/antigen.zsh
 antigen use oh-my-zsh
 
 antigen bundle git
-antigen bundle yarn
 antigen bundle zsh-users/zsh-autosuggestions
 
 antigen theme https://github.com/grubersjoe/dotfiles.git zsh/theme
@@ -32,23 +31,7 @@ if [ -f ~/.aliases ]; then
   . ~/.aliases
 fi
 
-# Own programs
-export PATH=$HOME/.local/bin:$PATH
-
-# Homebrew
-export PATH=$HOME/.docker/bin:$PATH
-export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"
-export PATH="/opt/homebrew/opt/php@8.2/bin:$PATH"
-export PATH="$(brew --prefix)/opt/python@3/libexec/bin:$PATH"
-
 # NVM
 export NVM_DIR="$HOME/.nvm"
 [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"
 [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"
-
-# Go
-export GOPATH=$HOME/.go
-export GOROOT="$(brew --prefix golang)/libexec"
-export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
-
-source <(kubectl completion zsh)
