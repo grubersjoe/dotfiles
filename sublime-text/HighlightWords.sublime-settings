@@ -1,7 +1,0 @@
-{
-  "ignore_case": true,
-  "permanent_highlight_keyword_color_mappings": [
-    {"keyword": "TODO.*", "color": "support.function", "flag": 2},
-    {"keyword": "FIXIT.*", "color": "support.function", "flag": 2},
-  ]
-}
