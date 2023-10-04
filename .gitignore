@@ -1,6 +1,6 @@
+*.copy
+fish/fish_variables
 linux/i3/config
 
 .idea/
 .DS_Store
-__pycache__/
-
