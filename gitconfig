@@ -12,9 +12,13 @@
 [core]
     autocrlf = input
     excludesfile = ~/.gitignore
+    pager = less -R
 
 [credential]
     helper = cache
+
+[include]
+    path = ~/.gitconfig.local
 
 [init]
     defaultBranch = main
@@ -31,4 +35,3 @@
 
 [user]
     name = Jonathan Gruber
-    email = gruberjonathan@gmail.com

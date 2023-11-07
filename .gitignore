@@ -1,4 +1,5 @@
 *.copy
+gitconfig.local
 fish/fish_variables
 linux/i3/config
 
