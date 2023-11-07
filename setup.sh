@@ -13,4 +13,4 @@ fi
 ln -sfiv "$PWD/fish" ~/.config
 ln -sfiv "$PWD/gitconfig" ~/.gitconfig
 ln -sfiv "$PWD/gitconfig.local" ~/.gitconfig.local
-
+ln -sfiv "$PWD/pnpmrc" ~/Library/Preferences/pnpm/rc
