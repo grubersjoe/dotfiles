@@ -1,5 +1,4 @@
 #!/bin/bash
-set -e
 
 # change PWD to script directory
 builtin cd "$(dirname "$0")" || exit
@@ -10,6 +9,7 @@ if [ ! -f gitconfig.local ]; then
   exit 0
 fi
 
+ln -sfiv "$PWD/bat.config" ~/.config/bat/config
 ln -sfiv "$PWD/fish" ~/.config
 ln -sfiv "$PWD/gitconfig" ~/.gitconfig
 ln -sfiv "$PWD/gitconfig.local" ~/.gitconfig.local
