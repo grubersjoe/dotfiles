@@ -1,12 +1,15 @@
 // Settings in here override those in "Default/Preferences.sublime-settings",
 // and are overridden in turn by syntax-specific settings.
 {
-	"font_face": "Jetbrains Mono",
-	"font_size": 13,
-	"theme": "Adaptive.sublime-theme",
 	"color_scheme": "Packages/Dracula Color Scheme/Dracula.tmTheme",
-	"ignored_packages":
-	[
-		"Vintage",
-	],
+	"ensure_newline_at_eof_on_save": true,
+	"font_face": "Jetbrains Mono",
+	"font_size": 14,
+	"font_options": ["ss02"],
+	// "font_options": ["ss01", "ss02", "ss03", "ss04", "ss05", "ss06", "ss07", "ss08", "calt", "dlig"],
+	"hardware_acceleration": true,
+	"theme": "Adaptive.sublime-theme",
+	"translate_tabs_to_spaces": true,
 }
+
+
