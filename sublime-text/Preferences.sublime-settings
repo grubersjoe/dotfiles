@@ -10,6 +10,9 @@
 	"hardware_acceleration": true,
 	"theme": "Adaptive.sublime-theme",
 	"translate_tabs_to_spaces": true,
+	"ignored_packages":
+	[
+		"Vintage",
+	],
+	"index_files": true,
 }
-
-
