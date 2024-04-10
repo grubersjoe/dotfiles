@@ -8,6 +8,7 @@
     dd = difftool --dir-diff
     s  = status
     p  = pull
+    cc = ! git rev-parse HEAD | pbcopy
 
 [core]
     autocrlf = input
