@@ -1,3 +1,3 @@
 function vim --wraps=hx --description 'alias vim=hx'
-  hx $argv
+    hx $argv
 end

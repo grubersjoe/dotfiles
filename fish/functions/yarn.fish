@@ -1,3 +1,3 @@
 function yarn --wraps=npm --description 'alias yarn npm'
-  npm $argv
+    npm $argv
 end
