@@ -1,12 +1,8 @@
 theme = "dracula_at_night"
 
-[editor]
-text-width = 100
-
 [editor.cursor-shape]
 insert = "bar"
 normal = "block"
 
 [editor.soft-wrap]
 enable = true
-wrap-at-text-width = true
