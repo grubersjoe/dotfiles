@@ -4,6 +4,8 @@
 <dict>
 	<key>Actions</key>
 	<array/>
+	<key>ClickToSelectCommand</key>
+	<false/>
 	<key>Default Bookmark Guid</key>
 	<string>53AF70F0-806C-4CD4-8FDC-7E36CB3C83C2</string>
 	<key>DimBackgroundWindows</key>
@@ -143,8 +145,12 @@
 	<true/>
 	<key>HotkeyMigratedFromSingleToMulti</key>
 	<true/>
+	<key>IRMemory</key>
+	<integer>4</integer>
 	<key>LeftTabBarWidth</key>
 	<real>218</real>
+	<key>NeverBlockSystemShutdown</key>
+	<true/>
 	<key>NeverWarnAboutShortLivedSessions_53AF70F0-806C-4CD4-8FDC-7E36CB3C83C2</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_53AF70F0-806C-4CD4-8FDC-7E36CB3C83C2_selection</key>
@@ -740,6 +746,8 @@
 			<true/>
 			<key>Normal Font</key>
 			<string>JetBrainsMono-Regular 14</string>
+			<key>Open Password Manager Automatically</key>
+			<false/>
 			<key>Option Key Sends</key>
 			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
@@ -810,6 +818,8 @@
 			<string>/Users/jgruber</string>
 		</dict>
 	</array>
+	<key>OnePasswordAccount</key>
+	<string></string>
 	<key>OpenArrangementAtStartup</key>
 	<false/>
 	<key>OpenNoWindowsAtStartup</key>
