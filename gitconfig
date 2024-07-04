@@ -7,8 +7,9 @@
     dc = diff --cached
     dd = difftool --dir-diff
     s  = status
-    p  = pull
+    pu  = pull
     cc = ! git rev-parse HEAD | pbcopy
+    pf = push --force-with-lease
 
 [core]
     autocrlf = input
