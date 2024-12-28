@@ -3,10 +3,12 @@
 {
 	"color_scheme": "Packages/Dracula Color Scheme/Dracula.tmTheme",
 	"ensure_newline_at_eof_on_save": true,
-	"font_face": "Jetbrains Mono",
+	"font_face": "0xProto",
 	"font_size": 14,
 	"font_options": ["ss02"],
 	// "font_options": ["ss01", "ss02", "ss03", "ss04", "ss05", "ss06", "ss07", "ss08", "calt", "dlig"],
+	"line_padding_top": 1,
+	"line_padding_bottom": 1,
 	"hardware_acceleration": true,
 	"theme": "Adaptive.sublime-theme",
 	"translate_tabs_to_spaces": true,
