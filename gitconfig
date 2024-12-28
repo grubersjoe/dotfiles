@@ -5,25 +5,33 @@
     co = checkout
     d  = diff
     dc = diff --cached
-    dd = difftool --dir-diff
     s  = status
     pu  = pull
-    cc = ! git rev-parse HEAD | pbcopy
+    cc = ! git rev-parse --short=8 HEAD | tr -d '\n' | pbcopy
     pf = push --force-with-lease
 
 [core]
     autocrlf = input
     excludesfile = ~/.gitignore
-    pager = less -R
+    pager = delta
 
 [credential]
     helper = cache
+
+[diff]
+    colorMoved = default
 
 [include]
     path = ~/.gitconfig.local
 
 [init]
     defaultBranch = main
+
+[interactive]
+    diffFilter = delta --color-only
+
+[merge]
+    conflictstyle = diff3
 
 [push]
     default = current
@@ -37,3 +45,11 @@
 
 [user]
     name = Jonathan Gruber
+
+[include]
+    path = /Users/jonathan.gruber/git/foss/delta/themes.gitconfig
+
+[delta]
+    navigate = true
+    side-by-side = true
+
