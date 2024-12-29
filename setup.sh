@@ -13,6 +13,7 @@ mkdir -p ~/.config/bat
 ln -sfiv "$PWD/bat.config" ~/.config/bat/config
 
 ln -sfiv "$PWD/fish" ~/.config
+ln -sfiv "$PWD/ghostty" ~/.config
 ln -sfiv "$PWD/gitconfig" ~/.gitconfig
 ln -sfiv "$PWD/gitconfig.local" ~/.gitconfig.local
 
