@@ -1,7 +1,7 @@
 theme = Dracula
 background = #0E1419
-window-padding-x = 12
-window-padding-y = 12
+window-padding-x = 10
+window-padding-y = 10
 window-padding-balance = true
 window-save-state = always
 cursor-style = underline
@@ -9,9 +9,8 @@ cursor-style-blink = false
 shell-integration-features = no-cursor
 font-family = 0xProto
 font-size = 14
-font-style-bold = false
 font-synthetic-style = false
-adjust-cell-height = 4
+adjust-cell-height = 5
 
 auto-update = off
 clipboard-trim-trailing-spaces = true
