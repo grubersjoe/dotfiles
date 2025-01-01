@@ -15,9 +15,10 @@ adjust-cell-height = 5
 auto-update = off
 clipboard-trim-trailing-spaces = true
 focus-follows-mouse = true
+quick-terminal-animation-duration = 0
 
-macos-titlebar-proxy-icon = hidden
 macos-titlebar-style = tabs
 
 keybind = cmd+j=previous_tab
 keybind = cmd+k=next_tab
+keybind = global:cmd+grave_accent=toggle_quick_terminal
