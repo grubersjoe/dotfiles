@@ -9,6 +9,7 @@ cursor-style-blink = false
 shell-integration-features = no-cursor
 font-family = 0xProto
 font-size = 14
+font-feature = -dlig
 font-synthetic-style = false
 adjust-cell-height = 5
 
@@ -21,4 +22,3 @@ macos-titlebar-style = tabs
 
 keybind = cmd+j=previous_tab
 keybind = cmd+k=next_tab
-keybind = global:cmd+grave_accent=toggle_quick_terminal
