@@ -21,5 +21,7 @@ window-save-state = always
 
 macos-titlebar-style = tabs
 
-keybind = cmd+j=previous_tab
-keybind = cmd+k=next_tab
+keybind = cmd+shift+j=previous_tab
+keybind = cmd+shift+k=next_tab
+keybind = cmd+j=goto_split:previous
+keybind = cmd+k=goto_split:next
