@@ -1,22 +1,23 @@
-theme = Dracula
+adjust-cell-height = 2
+auto-update = off
 background = #0E1419
-window-padding-x = 10
-window-padding-y = 10
-window-padding-balance = true
-window-save-state = always
+clipboard-paste-protection = false
+clipboard-trim-trailing-spaces = true
 cursor-style = underline
 cursor-style-blink = false
-shell-integration-features = no-cursor
-font-family = 0xProto
-font-size = 14
-font-feature = -dlig
-font-synthetic-style = false
-adjust-cell-height = 5
-
-auto-update = off
-clipboard-trim-trailing-spaces = true
 focus-follows-mouse = true
+font-family = 0xProto
+font-feature = -dlig
+font-size = 14
+font-synthetic-style = false
 quick-terminal-animation-duration = 0
+shell-integration-features = no-cursor
+theme = Dracula
+unfocused-split-opacity = 0.8
+window-padding-balance = true
+window-padding-x = 10
+window-padding-y = 10
+window-save-state = always
 
 macos-titlebar-style = tabs
 
