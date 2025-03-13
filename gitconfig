@@ -53,3 +53,7 @@
     navigate = true
     side-by-side = true
 
+[tig "color"]
+    cursor = black magenta
+    title-blur = black blue
+    title-focus = black blue
