@@ -1,5 +1,3 @@
-#fish_config theme choose coolbeans
-
 if test "$color_scheme" = light
     fish_config theme choose "Snow Day"
 else
