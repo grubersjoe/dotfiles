@@ -1,5 +1,8 @@
 theme = "dracula_at_night"
 
+[editor]
+mouse = false
+
 [editor.cursor-shape]
 insert = "bar"
 normal = "block"
