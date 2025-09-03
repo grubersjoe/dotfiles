@@ -5,6 +5,7 @@
     co = checkout
     d  = diff
     dc = diff --cached
+    f = fetch
     s  = status
     pu  = pull
     cc = ! git rev-parse --short=8 HEAD | tr -d '\n' | pbcopy
