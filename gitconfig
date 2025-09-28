@@ -7,7 +7,7 @@
     dc = diff --cached
     f = fetch
     s  = status
-    pu  = pull
+    p  = pull
     cc = ! git rev-parse --short=8 HEAD | tr -d '\n' | pbcopy
     pf = push --force-with-lease
 
