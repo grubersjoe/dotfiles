@@ -1,3 +1,16 @@
+[user]
+    name = Jonathan Gruber
+    signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAJNe83d59jhlH2lw2Nu8hvOrOMOU+pTdmj5n3/Dobuq
+
+[gpg]
+    format = ssh
+
+[gpg "ssh"]
+    program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+
+[commit]
+    gpgsign = true
+
 [alias]
     a  = add
     b  = branch
@@ -44,12 +57,6 @@
 
 [rebase]
     autoStash = true
-
-[user]
-    name = Jonathan Gruber
-
-[include]
-    path = /Users/jonathan.gruber/git/foss/delta/themes.gitconfig
 
 [delta]
     navigate = true
