@@ -1,2 +1,12 @@
 [user]
-	email = gruberjonathan@gmail.com
+	email = <email>
+    signingkey = ssh-ed25519 <key>
+
+[gpg]
+    format = ssh
+
+[gpg "ssh"]
+    program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+
+[commit]
+    gpgsign = true
