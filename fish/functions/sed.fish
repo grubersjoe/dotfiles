@@ -1,3 +1,3 @@
-function sed --wraps=gsed --description 'alias sed=gsed'
+function sed --wraps='gsed'
     gsed $argv
 end

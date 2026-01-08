@@ -1,3 +1,3 @@
-function htop --wraps=btop --description 'alias htop=btop'
+function htop --wraps='btop'
     btop $argv
 end

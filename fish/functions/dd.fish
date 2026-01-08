@@ -1,3 +1,3 @@
-function dd --description 'alias dd=dd status=progress'
+function dd --wraps='dd status=progress'
     command dd status=progress $argv
 end

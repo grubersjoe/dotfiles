@@ -1,3 +1,3 @@
-function g --wraps=glab --description 'alias g=glab'
+function g --wraps='glab'
     glab $argv
 end

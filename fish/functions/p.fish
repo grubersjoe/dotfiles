@@ -1,3 +1,3 @@
-function p --wraps=pnpm --description 'alias p pnpm'
+function p --wraps='pnpm'
     pnpm $argv
 end
