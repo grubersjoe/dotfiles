@@ -1,6 +1,0 @@
-.git
-.svn
-.idea
-.vendor
-.bundle
-node_modules
