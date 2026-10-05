@@ -11,8 +11,10 @@
   "npm.packageManager": "pnpm",
   "window.commandCenter": false,
   "window.density.editorTabHeight": "compact",
-  "window.zoomLevel": 0.8,
+  "window.zoomLevel": 0.75,
   "workbench.colorTheme": "Dracula Theme",
   "workbench.startupEditor": "none",
-  "editor.fontSize": 13
+  "editor.fontSize": 12,
+  "update.mode": "none",
+  "telemetry.feedback.enabled": false,
 }
