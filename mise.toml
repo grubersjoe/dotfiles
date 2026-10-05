@@ -1,0 +1,6 @@
+[tools]
+go = "latest"
+node = "latest"
+pnpm = "latest"
+"npm:typescript" = "latest"
+"npm:typescript-language-server" = "latest"

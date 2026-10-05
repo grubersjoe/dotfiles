@@ -1,5 +1,8 @@
 #!/bin/bash
 
+brew install -q -y mise
+mise install
+
 # change PWD to script directory
 builtin cd "$(dirname "$0")" || exit
 
