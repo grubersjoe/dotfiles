@@ -16,6 +16,3 @@ ln -sfiv "$PWD/fish" ~/.config
 ln -sfiv "$PWD/ghostty" ~/.config
 ln -sfiv "$PWD/gitconfig" ~/.gitconfig
 ln -sfiv "$PWD/gitconfig.local" ~/.gitconfig.local
-
-mkdir -p ~/Library/Preferences/pnpm/
-ln -sfiv "$PWD/pnpmrc" ~/Library/Preferences/pnpm/rc
