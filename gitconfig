@@ -9,11 +9,11 @@
     co = checkout
     d  = diff
     dc = diff --cached
-    f = fetch
+    f  = fetch
     s  = status
-    p  = pull
+    p  = push
+    pu = pull
     pf = push --force-with-lease
-    pu = push
 
 [core]
     autocrlf = input
